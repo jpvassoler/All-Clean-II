@@ -1,0 +1,246 @@
+body{
+    background-color: rgb(239, 239, 239);
+}
+#div1{
+    background-color: rgb(30, 30, 201);
+    width: 500px;
+    height: 600px;
+    margin-top: 50px;
+    margin-left: 125px;
+    border-radius: 15px;
+}
+#div2{
+    background-color: white;
+    width: 800px;
+    height: 600px;
+    margin-top: -600px;
+    margin-left: 600px;
+    border-radius: 0 10px 10px 0;
+}
+#allclean{
+  color: aliceblue;
+  text-align: center;
+  line-height: 400px;
+  font-size: 90px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#amelhor{
+    color: aliceblue;
+    text-align: center;
+    margin-top: -160px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#cadastrar {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-left: 170px;
+    cursor: pointer;
+  }
+  
+  #cadastrar:hover {
+    background: rgb(0, 85, 255);
+    box-shadow: 0 0 30px 5px rgba(199, 203, 206, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  #cadastrar:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  #cadastrar::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  #cadastrar:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+
+/* Quadro branco */
+#criar{
+  position: absolute;
+  font-size: 80px;
+  color: rgb(30, 30, 201);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 140px;
+  margin-top: 10px;
+}
+#usuario{
+  position: absolute;
+  width: 30px;
+  margin-left: -450px;
+  margin-top: 160px;
+}
+#carta{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 58px;
+  margin-left: -450px;
+}
+#cadeado{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 60px;
+  margin-left: -450px;
+}
+#nomebox{
+    width: 400px;
+    height: 40px;
+    margin-left: 200px;
+    margin-top: 150px;
+}
+#emailbox{
+  width: 400px;
+  height: 40px;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+#senhabox{
+  width: 400px;
+  height: 40px;
+  margin-top: 50px;
+  margin-left: 200px;
+  direction: ltr;
+}
+#esqueceu{
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#clique{
+  text-align: center;
+}
+input::placeholder{
+  color: grey;
+  font-family: 'Courier New', Courier, monospace;
+}
+#clique{
+  position: absolute;
+  margin-left: 360px;
+  color: black;
+}
+#botaoE {
+    padding: 0.8em 1.8em;
+    border: 2px solid white;
+    color:  white;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.455);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif color;
+    margin-left: 340px;
+    margin-top: 30px;
+    cursor: pointer;
+   }
+   
+   #botaoE::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: rgb(30, 30, 201);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   #botaoE:hover::before {
+    width: 105%;
+}
+#acesse{
+  position: absolute;
+  color: white;
+  margin-left: 120px;
+  margin-top: 15px;
+  font-family: 'Courier New', Courier, monospace;
+}
+#icone_insta{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+#icone_tt{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-top: 100px;
+  margin-left: -70px;
+  border-radius: 10px;
+}
+#icone_link{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-top: 80px;
+  margin-left: -160px;
+  border-radius: 10px;
+}
+#icone_face{
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  margin-top: 92px;
+  margin-left: -217px;
+  border-radius: 10px;
+}
