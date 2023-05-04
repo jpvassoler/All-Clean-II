@@ -13,8 +13,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(148,187,233);
-    background: linear-gradient(90deg, rgba(148,187,233,1) 0%, rgba(101,139,224,1) 53%, rgba(57,107,219,1) 100%);
+    background: rgb(148, 187, 233);
+    background: linear-gradient(90deg, rgba(148, 187, 233, 1) 0%, rgba(101, 139, 224, 1) 53%, rgba(57, 107, 219, 1) 100%);
 }
 
 .container {
@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f1dfb6d7;
+    background-color: #e9da90d7;
     padding: 1rem;
     border-radius: 10px 0 0 10px;
 }
@@ -63,14 +63,14 @@ body {
 
 .login-button button {
     border: none;
-    background-color:  rgb(30, 30, 201);
+    background-color: rgb(30, 30, 201);
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .login-button button:hover {
-    background-color:  #3128e7f1;
+    background-color: #3128e7f1;
 }
 
 .login-button button a {
@@ -84,7 +84,7 @@ body {
     display: block;
     width: 5rem;
     height: 0.3rem;
-    background-color: rgb(30, 30, 201) ;
+    background-color: rgb(30, 30, 201);
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
@@ -133,7 +133,7 @@ body {
     width: 100%;
     margin-top: 2.0rem;
     border: none;
-    background-color:  rgb(30, 30, 201);
+    background-color: rgb(30, 30, 201);
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
@@ -167,13 +167,13 @@ body {
     transition: background-color 0.4s;
     overflow: hidden;
     cursor: pointer;
-   }
-   
-   #check:checked ~ .checkmark {
+}
+
+#check:checked~.checkmark {
     background-color: #08bb68;
-   }
-   
-   .checkmark::after {
+}
+
+.checkmark::after {
     content: "";
     position: absolute;
     width: 5px;
@@ -185,21 +185,37 @@ body {
     transform: translate(-50%, -50%) rotateZ(40deg) scale(10);
     opacity: 0;
     transition: all 0.4s;
-   }
-   
-   #check:checked ~ .checkmark::after {
+}
+
+#check:checked~.checkmark::after {
     opacity: 1;
     transform: translate(-50%, -50%) rotateZ(40deg) scale(1);
-   }
+}
 
-   #eu-li {
+#eu-li {
     position: absolute;
     margin-left: 30px;
     margin-top: 4px;
     font-size: 15px;
-   }
+}
 
-   #termos {
+#termos {
     color: #2015f1;
     text-decoration: none;
-   }
+}
+
+#ver {
+    position: absolute;
+    width: 30px;
+    margin-left: 180px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#ver1 {
+    position: absolute;
+    width: 30px;
+    margin-left: 180px;
+    margin-top: 30px;
+    cursor: pointer;
+}
