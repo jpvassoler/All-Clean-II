@@ -7,7 +7,7 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="CriarConta.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -23,14 +23,15 @@
                     </div>
                     <div id="ja">Já é membro?</div>
                     <div class="login-button">
-                        <button><a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Cadastro.html">Entrar</a></button>
+                        <button type="button"><a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Cadastro.html">Entrar</a></button>
                     </div>
                 </div>
 
                 <div class="input-group">
                     <div class="input-box">
-                        <label for="firstname">Nome completo</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu nome completo" pattern="^[a-zA-ZÀ-ú]$" minlength="5" maxlength="100" required>
+                        <label for="firsTname">Nome completo</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu nome completo" minlength="1" maxlength="100" required>
+                        <script src="https://unpkg.com/imask"></script>
                     </div>
 
                     <div class="input-box">
@@ -40,7 +41,7 @@
 
                     <div class="input-box">
                         <label for="text">Celular (com DDD)</label>
-                        <input id="number" type="tel" name="number" placeholder="(xx)xxxx-xxxx" min="0" max="9" minlength="13" maxlength="13" required>
+                        <input id="number" type="text" placeholder="(xx)xxxx-xxxx" minlength="13" maxlength="13" required>
                     </div>
 
                     <div class="input-box">
@@ -50,17 +51,19 @@
 
                     <div class="input-box">
                         <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" minlength="10" maxlength="100" required>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" minlength="4" maxlength="15" required>
+                        <img src="img/eye.svg" id="ver">
                     </div>
 
                     <div class="input-box">
                         <label for="Confirmpassword">Confirme sua senha</label>
-                        <input id="Confirmpassword" type="password" name="Confirmpassword" placeholder="Digite sua senha" minlength="10" maxlength="100" required>
+                        <input id="Confirmpassword" type="password" name="Confirmpassword" placeholder="Digite sua senha"  minlength="4" maxlength="15" required>
+                        <img src="img/eye.svg" id="ver1">
                     </div>
                 </div>
                 
                 <label class="checkbox-wrapper">
-                    <input checked="" type="checkbox" id="check" hidden=""><h1 id="eu-li">Eu li e concordo com os <a href="#" id="termos">termos e condições</a></h1></input>
+                    <input type="checkbox" id="check" hidden="" required><h1 id="eu-li">Eu li e concordo com os <a href="#" id="termos">termos e condições</a></h1></input>
                     <label for="check" class="checkmark"></label>
                 </label>
                 
@@ -70,6 +73,65 @@
             </form>
         </div>
     </div>
+
+    <!-- Input celular  -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>
+        $('#number').mask('(00) 0000-0000');
+    </script>
+     
+    <!-- Input name -->
+
+    <script>
+        var regExpMask = IMask(
+  document.getElementById('firstname'),
+  {
+    mask: /^[a-z+A-ZÁáÉéÍíÓóÚúÝýÂâÊêÎîÔôÛûÀàÈèÌìÒòÙùÃãÑñÕõÄäËëÏïÖöÜüŸÿ ]{0,100}$/
+  });
+    </script>
+
+    <!-- Input senha -->
+
+    <script>
+        const senha = document.querySelector('#password')
+        const ver = document.querySelector('#ver')
+
+        ver.onclick = () =>
+        {
+            if (senha.type === 'password') 
+            {
+                senha.type = 'text'
+                ver.src = 'img/eye-slash.svg'
+            }   
+            else
+            {
+                senha.type ='password'
+                ver.src = 'img/eye.svg'
+            }
+        }
+    </script>
+
+<script>
+    const senha1 = document.querySelector('#Confirmpassword')
+    const ver1 = document.querySelector('#ver1')
+
+    ver1.onclick = () =>
+    {
+        if (senha1.type === 'password') 
+        {
+            senha1.type = 'text'
+            ver1.src = 'img/eye-slash.svg'
+        }   
+        else
+        {
+            senha1.type ='password'
+            ver1.src = 'img/eye.svg'
+        }
+    }
+</script>
+
 </body>
 
 </html>
