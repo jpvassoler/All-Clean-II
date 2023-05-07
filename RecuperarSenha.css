@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(148, 187, 233);
+    background: linear-gradient(90deg, rgba(148, 187, 233, 1) 0%, rgba(101, 139, 224, 1) 53%, rgba(57, 107, 219, 1) 100%);
+}
+
+.img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(59, 59, 228);
+}
+
+#logo-nome {
+    width: 600px;
+    height: 150px;
+    margin-top: -20px;
+    margin-left: 460px;
+}
+
+/* QUADRO BRANCO */
+
+.qd-email {
+    margin-top: 30%;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    display: block;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.linha-azul {
+    background-color:rgb(59, 59, 228); 
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, .212);
+}
+
+#esqueceu {
+    display: block;
+    color:#fff;
+    text-align: center;
+    font-size: 35px;
+    padding: 30px;
+}
+
+#insira {
+    font-size: 18px;
+    text-align: center;
+    margin-top: -10px;
+    padding: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 50px;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00001c;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.btn-ctn {
+    position: absolute;
+    width: 400px;
+    border: none;
+    background-color: rgb(59, 59, 228);
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: -100px;
+}
+
+.btn-ctn:hover {
+    background-color: #3228e7c7;
+}
+
+.btn-ctn a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+#ver {
+    position: absolute;
+    width: 30px;
+    margin-left: 350px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#ver1 {
+    position: absolute;
+    width: 30px;
+    margin-left: 350px;
+    margin-top: 30px;
+    cursor: pointer;
+}
