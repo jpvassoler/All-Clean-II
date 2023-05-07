@@ -12,7 +12,7 @@ body {
 /* MENU LATERAL  */
 
 .menu-lateral {
-    width: 70px;
+    width: 80px;
     height: 100%;
     background-color: rgb(0, 0, 0);
     padding: 40px 0 40px 1%;
@@ -21,23 +21,23 @@ body {
     top: 0;
     left: 0;
     overflow: hidden;
-    transition: .3s;
+    transition: .4s;
 }
 
-.menu-lateral:hover {
+.menu-lateral.expandir {
     width: 300px;
 }
 
 .bnt_expandir {
     width: 100%;
-    padding: 10px;
+    padding: 30px;
 }
 
 .bnt_expandir > i {
     color: rgb(255, 255, 255);
     font-size: 30px;
     cursor: pointer;
-    margin-left: -5px;
+    margin-left: -20px;
 }
 
 ul {
@@ -46,6 +46,10 @@ ul {
 }
 ul li.item_menu {
     transition: .3s;
+}
+
+ul li.ativo{
+    background-color:rgb(30, 30, 201);
 }
 
 ul li.item_menu:hover {
@@ -63,15 +67,21 @@ ul li.item_menu a {
 }
 
 ul li.item_menu a .txt-link {
-    margin-left: 30px;
+    margin-left: 65px;
+    transition: .5s;
+    opacity: 0;
+}
+
+.menu-lateral.expandir .txt-link {
+    margin-left: 35px;
+    opacity: 1;
 }
 
 ul li.item_menu a .icon > i {
  font-size: 30px;
- margin-left: 0px;
+ margin-left: 10px;
 }
 
 /* FIM MENU LATERAL  */
 
 /* Resto do site */
-
