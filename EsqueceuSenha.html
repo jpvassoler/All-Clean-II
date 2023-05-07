@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Clean</title>
+    <link rel="stylesheet" href="EsqueceuSenha.css">
+</head>
+<body>
+    <div class="img">
+        <img src="img/logo-branca.png" id="logo-nome">
+    </div>
+
+    <div>
+        <div class="qd-email">
+           <div class="linha-azul"> 
+                <h1 id="esqueceu">Esqueceu sua senha?</h1>
+            </div>
+            <h2 id="insira">Insira o e-mail e o número de sua conta para que possamos identifica-lo e alterar sua senha.</h2>
+           <form action="#"> 
+            <div class="input-box">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email" placeholder="Digite seu email" autocomplete="email" minlength="10" maxlength="100" required>
+            </div>
+
+            <div class="input-box">
+                <label for="text">Celular (com DDD)</label>
+                <input id="number" type="text" placeholder="(xx)xxxx-xxxx" minlength="13" maxlength="13" required>
+            </div>
+
+            <button class="btn-ctn"><a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/RecuperarSenha.html">Continuar</a></button>
+        </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>
+        $('#number').mask('(00) 0000-0000');
+    </script>
+</body>
+</html>
