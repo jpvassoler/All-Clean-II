@@ -1,0 +1,475 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(148, 187, 233);
+    background: linear-gradient(90deg, rgba(148, 187, 233, 1) 0%, rgba(101, 139, 224, 1) 53%, rgba(57, 107, 219, 1) 100%);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* CABEÇALHO */
+
+.azul {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background-color: rgb(59, 59, 228);
+    z-index: 2;
+}
+
+.azul img {
+    display: block;
+    margin: auto;
+    margin-top: -15px;
+    width: 500px;
+}
+
+/* MENU LATERAL  */
+
+.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 40px 0 40px 1%;
+    box-shadow: 5px 0 0 rgb(59, 59, 228);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
+    z-index: 3;
+}
+
+.menu-lateral.expandir {
+    width: 300px;
+}
+
+.bnt_expandir {
+    width: 100%;
+    padding: 30px;
+}
+
+.bnt_expandir>i {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: -20px;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item_menu {
+    transition: .3s;
+}
+
+ul li.ativo {
+    background-color: rgb(59, 59, 228);
+}
+
+ul li.item_menu:hover {
+    background-color: rgb(59, 59, 228);
+}
+
+ul li.item_menu a {
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 25px;
+    line-height: 40px;
+}
+
+ul li.item_menu a .txt-link {
+    margin-left: 65px;
+    transition: .5s;
+    opacity: 0;
+}
+
+.menu-lateral.expandir .txt-link {
+    margin-left: 35px;
+    opacity: 1;
+}
+
+ul li.item_menu a .icon>i {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+/* RESTO DO SITE  */
+ 
+.horario-pagamento {
+    position: absolute;
+    margin-top:-250px;
+    z-index: 1;
+}
+
+
+h1 {
+    margin-top: 1000px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#horario {
+    text-align: center;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    margin-left: 300px;
+}
+
+#aviso {
+    text-align: center;
+}
+
+.forma-pagamento {
+    display: flex;
+    margin-left: 50px;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 190px;
+    height: 254px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    background-color: rgba(150, 247, 115, 0.725);
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  .forma-pagamento p {
+   margin-top: 150px;
+   text-align: center;
+}
+
+
+  .forma-pagamento i {
+    font-size: 100px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* FORMAS DE PAGAMENTO  */
+
+  .mostrar {
+    height: 260px  !important;
+    width: 600px !important;
+    transition: .7s;
+}
+
+  .div-card {
+    background-color: aliceblue;
+    height: 260px;
+    width: 600px;
+    border-radius: 10px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+  }
+
+ /* INPUT CARDS  */
+
+ .grup-cards {
+    margin-left: 50px;
+    margin: 20px;
+    
+ }
+
+.grup-cards input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00001c;
+    margin-top: 15px
+}
+
+.grup-cards input:hover {
+    background-color: #eeeeee75;
+}
+
+.grup-cards input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.grup-cards label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.teste {
+    margin-left: 230px;
+    margin-top: -200px;
+}
+
+.espaco {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color:transparent;
+    margin-top: 1850px;
+}
+
+.grup-cards select {
+    border: none;
+    outline: 1px solid #8680f6;
+    box-shadow: 1px 1px 6px #00001c;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 15px;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    width: 60px;
+    height: 45px;
+}
+
+.ano select {
+    display: flex;
+    margin-left: 80px;
+    margin-top: -45px;
+    width: 85px;
+    height: 45px;
+}
+
+option {
+    text-align: center;
+    background-color: #babae7;
+    color: #000;
+    height: 20px;
+}
+
+#b1{
+    background-color: rgb(98, 98, 236);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 540px;
+    margin-top: -10px;
+    
+}
+
+#b2{
+    background-color: rgb(98, 98, 236);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -60px;
+}
+
+/* BOTÕES CARD  */
+
+#btn-confirm {
+    position: absolute;
+    margin-left: 440px;
+    margin-top: -5px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #000;
+    cursor: pointer;
+}
+
+#btn-confirm:hover {
+    background-color: #000000bf;
+}
+
+#btn-confirm a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+#btn-troca {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: -5px;
+    border-radius: 10px;
+    height: 40px;
+    width: 300px;
+    border: none;
+    background-color: rgb(98, 98, 236);
+    cursor: pointer;
+}
+
+#btn-troca:hover {
+    background-color: rgba(98, 98, 236, 0.734);
+}
+
+#btn-troca a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+/* FIM BOTÕES CARD  */
+
+/* DIV PIX */
+
+.div-pix {
+    background-color: aliceblue;
+    height: 260px;
+    width: 600px;
+    border-radius: 10px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.div-pix h1 {
+    margin-top: 0;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.div-pix p {
+    text-align: center;
+    margin-top: -30px;
+}
+
+.div-pix i {
+    font-size: 120px;
+    margin-left: 30px;
+}
+
+
+.input-pix {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -135px;
+}
+ 
+.input-pix input {
+    width: 170px;
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00001c;
+    margin-top: 15px
+}
+
+.input-pix input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-pix input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-pix label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-pix i {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.input-pix button {
+    background-color: transparent;
+    border: none;
+}
+
+#confirmar-pix {
+        position: absolute;
+        margin-left: 40px;
+        margin-top: 95px;
+        border-radius: 10px;
+        height: 35px;
+        width: 200px;
+        border: none;
+        background-color: rgb(98, 98, 236);
+        cursor: pointer;
+    }
+    
+    #confirmar-pix:hover {
+        background-color: rgba(98, 98, 236, 0.734);
+    }
+    
+    #confirmar-pix a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+    }
+
+    #trocar-pix {
+        position: absolute;
+        margin-left: 280px;
+        margin-top: 95px;
+        width: 150px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        background-color: #000;
+        cursor: pointer;
+    }
+
+#trocar-pix:hover {
+    background-color: #000000bf;
+}
+
+#trocar-pix a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
