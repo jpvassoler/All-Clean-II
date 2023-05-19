@@ -69,7 +69,109 @@
 
         <h1>Selecione o horário desejado para o atendimento</h1>
 
-        <input type="text" name="horario" id="horario" maxlength="4" minlength="4" placeholder="00:00h">
+    
+            <div class="horario">
+                <div>
+                    <label>
+                        <input type="radio" name="radio" checked="">
+                        <span>08:00</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>08:30</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>09:00</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>09:30</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>10:00</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>10:30</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>11:00</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>11:30</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>12:00</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>12:30</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>13:00</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>13:30</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>14:00</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>14:30</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>15:00</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>15:30</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>16:00</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>16:30</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>17:00</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>17:30</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>18:00</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>18:30</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>19:00</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>19:30</span>
+                    </label>
+                </div>
+            </div>
+
+
 
         <p id="aviso">Lembre-se de sempre estar em casa nos horários e dias marcados.<br> Não será disponibilizado
             reembolso sem aviso prévio de ausência.</p>
@@ -80,32 +182,35 @@
 
         <div class="forma-pagamento">
 
-
-            <div class="card"><i style="color: rgb(222, 28, 28);" class="bi bi-credit-card"></i><br>
-                <span>
-                    <p>Cartão de crédito ou débito</p>
-                </span>
-
+            <div class="card-span">
+                <div class="card"><i style="color: rgb(222, 28, 28);" class="bi bi-credit-card"></i><br>
+                    <span>
+                        <p>Cartão de crédito ou débito</p>
+                    </span>
+                </div>
             </div>
 
-
-            <span>
-                <div class="card"><i style="color: rgb(255, 119, 0);" class="bi bi-wallet2"></i><br>
-                    <p>Pix</p>
+            <div class="pix-span">
+                <div class="card1"><i style="color: rgb(255, 119, 0);" class="bi bi-wallet2"></i><br>
+                    <span>
+                        <p>Pix</p>
+                    </span>
 
                 </div>
-            </span>
+            </div>
 
-            <span>
-                <div class="card"><i style="color: green;" class="bi bi-cash-stack"></i><br>
-                    <p>Dinheiro</p>
+            <div class="dinheiro-span">
+                <div class="card2"><i style="color: green;" class="bi bi-cash-stack"></i><br>
+                    <span>
+                        <p>Dinheiro</p>
+                    </span>
                 </div>
-            </span>
+            </div>
 
         </div>
     </div>
 
-<!------------------------------------------------------->
+    <!------------------------------------------------------->
 
     <div class="div-card">
 
@@ -173,57 +278,178 @@
     <!-- --------------------------------------------------------------------------- -->
 
     <div class="div-pix">
-        <h1>Efetue pelo Qrcode ou copie a chave aleatória</h1>
+        <div id="b3"></div>
+        <div id="b4"></div>
+        <div id="b5"></div>
+        <h1>EscaneieQrcode ou copie a chave aleatória</h1>
         <p>Confirme o pagamento após efetua-lo caso contrário seu pagamento será invalidado</p>
         <i class="bi bi-qr-code"></i>
         <div class="input-pix">
-        <label for="pix">Copie o código para pagamento</label>
-        <input type="text" id="meuInput" value="Qrer4rgtg4g4454t1w2" readonly>
-        <button id="botaoCopiar">
-        <i class="bi bi-clipboard"></i>
-        </button>
+            <label for="pix">Copie o código para pagamento</label>
+            <input type="text" id="meuInput" value="Qrer4rgtg4g4454t1w2" readonly>
+            <button id="botaoCopiar">
+                <i class="bi bi-clipboard"></i>
+            </button>
         </div>
-        
         <button id="confirmar-pix"><a href="#">Confirmar pagamento</a></button>
         <button id="trocar-pix"><a href="#">Trocar plano</a></button>
     </div>
 
-<!-- -------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------DIV DINHEIRO------------------------------------------------- -->
+
+    <div class="div-dinheiro">
+        <h1>Entregue o pagamento antes do serviço</h1>
+        <p>Ao chegarmos em sua residência, será necessário efetuar o pagamento antes do atendimento, caso não aceite,
+            terá que arcar com o custo de R$20,00</p>
+        <div class="check-ciente">
+            <label class="checkbox-wrapper">
+                <input type="checkbox" id="check" hidden="" required>
+                <h1 id="eu-li">Eu concordo e estou ciente a respeito</h1></input>
+                <label for="check" class="checkmark"></label>
+            </label>
+        </div>
+
+        <div class="input-troco">
+            <label for="troco">Precisa de Troco?</label>
+            <div class="opcao">
+                <input type="radio" name="sim-nao" required>
+                <label for="sim">Sim</label>
+                <input type="radio" name="sim-nao" required>
+                <label for="não">Não</label>
+            </div>
+            <div class="input-valor">
+                <label for="valor">Valor do troco</label>
+                <input type="text" maxlength="4" minlength="0" id="input-valor-troco">
+            </div>
+        </div>
+
+        <div id="b6"></div>
+        <div id="b7"></div>
+        <div id="b8"></div>
+
+        <button id="confirmar-dinheiro"><a href="#">Confirmar informações</a></button>
+        <button id="trocar-dinheiro"><a href="#">Trocar plano</a></button>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------->
     <div class="espaco">
 
     </div>
 
+
     <script>
-        var span = document.querySelector('.forma-pagamento span');
 
-        span.addEventListener('click', function () {
-            var conteudo = document.querySelector('.div-card');
+        //CARD
 
-            if (conteudo.classList.contains('mostrar')) {
-                span.innerHTML = "Cartão de crédito ou débito"
-                conteudo.classList.remove('mostrar')
+        var span_card = document.querySelector('.card-span');
+
+        span_card.addEventListener('click', function () {
+            var conteudo_card = document.querySelector('.div-card');
+
+            if (conteudo_card.classList.contains('mostrar')) {
+                //span.innerHTML = "Cartão de crédito ou débito"
+                conteudo_card.classList.remove('mostrar')
             } else {
-                span.innerHTML = "Cartão de crédito ou débito"
-                conteudo.classList.add('mostrar')
+                //span.innerHTML = "Cartão de crédito ou débito"
+                conteudo_card.classList.add('mostrar')
+
             }
         })
 
-    </script>
+        var cor_card = document.querySelector('.card-span')
+        cor_card.addEventListener('click', function () {
+            var conteudo_card = document.querySelector('.card');
+            if (conteudo_card.classList.contains('cor-card')) {
 
-    <script>
+                conteudo_card.classList.remove('cor-card')
+
+            } else {
+              
+                conteudo_card.classList.add('cor-card')
+
+            }
+        })
+        
+
+        //PIX
+
+        var span_pix = document.querySelector('.pix-span');
+
+        span_pix.addEventListener('click', function () {
+            var conteudo_pix = document.querySelector('.div-pix');
+
+            if (conteudo_pix.classList.contains('mostrar')) {
+                //span.innerHTML = "Pix"
+                conteudo_pix.classList.remove('mostrar')
+            } else {
+                //span.innerHTML = "Pix"
+                conteudo_pix.classList.add('mostrar')
+            }
+        })
+
+        var cor_pix = document.querySelector('.pix-span')
+        cor_pix.addEventListener('click', function () {
+            var conteudo_pix = document.querySelector('.card1');
+            if (conteudo_pix.classList.contains('cor-card')) {
+
+                conteudo_pix.classList.remove('cor-card')
+
+            } else {
+              
+                conteudo_pix.classList.add('cor-card')
+
+            }
+        })
+
+        //DINHEIRO
+
+        var span_din = document.querySelector('.dinheiro-span');
+        span_din.addEventListener('click', function () {
+            var conteudo_din = document.querySelector('.div-dinheiro');
+
+            if (conteudo_din.classList.contains('mostrar')) {
+                //span.innerHTML = "Cartão de crédito ou débito"
+                conteudo_din.classList.remove('mostrar')
+            } else {
+                //span.innerHTML = "Cartão de crédito ou débito"
+                conteudo_din.classList.add('mostrar')
+
+            }
+        })
+
+        var cor_din = document.querySelector('.dinheiro-span')
+        cor_din.addEventListener('click', function () {
+            var conteudo_din = document.querySelector('.card2');
+            if (conteudo_din.classList.contains('cor-card')) {
+
+                conteudo_din.classList.remove('cor-card')
+
+            } else {
+              
+                conteudo_din.classList.add('cor-card')
+
+            }
+        })
+
         const input = document.getElementById("meuInput");
-const botaoCopiar = document.getElementById("botaoCopiar");
+        const botaoCopiar = document.getElementById("botaoCopiar");
 
-botaoCopiar.addEventListener("click", function() {
-  input.select();
-  input.setSelectionRange(0, input.value.length);
-  document.execCommand("copy");
-});
-
+        botaoCopiar.addEventListener("click", function () {
+            input.select();
+            input.setSelectionRange(0, input.value.length);
+            document.execCommand("copy");
+        });
     </script>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-    <script>
-        $('#horario').mask('00:00h');
-    </script>
+    <script> $('#input-valor-troco').mask('R$00,00');</script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script> $('#horario').mask('00:00h');</script>
+
+
+</body>
+
+</html>
