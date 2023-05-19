@@ -1,455 +1,853 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Clean</title>
-    <link rel="stylesheet" href="AssinarPlano.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-</head>
-
-<body>
-    <div class="azul">
-        <img src="img/logo-nome.png" alt="">
-    </div>
-
-    <nav class="menu-lateral">
-
-        <div class="bnt_expandir">
-            <i class="bi bi-list" id="btn-exp"></i>
-        </div>
-
-        <ul>
-
-            <li class="item_menu">
-                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PgInicial.html#">
-                    <span class="icon"><i class="bi bi-house-door"></i></span>
-                    <span class="txt-link">Inicial</span>
-                </a>
-            </li>
-
-            <li class="item_menu">
-                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Perfil.html">
-                    <span class="icon"><i class="bi bi-person"></i></span>
-                    <span class="txt-link">Perfil</span>
-                </a>
-            </li>
-
-
-            <li class="item_menu">
-                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Historico.html">
-                    <span class="icon"><i class="bi bi-clock-history"></i></span>
-                    <span class="txt-link">Histórico</span>
-                </a>
-            </li>
-
-            <li class="item_menu">
-                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Contato.html">
-                    <span class="icon"><i class="bi bi-telephone"></i></span>
-                    <span class="txt-link">Contato</span>
-                </a>
-
-            </li>
-
-            <li class="item_menu">
-                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Agendamentos.html">
-                    <span class="icon"><i class="bi bi-calendar2-check"></i></span>
-                    <span class="txt-link">Agendamentos</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <script src="menu.js"></script>
-
-
-    <div class="horario-pagamento">
-
-        <h1>Selecione o horário desejado para o atendimento</h1>
-
-    
-            <div class="horario">
-                <div>
-                    <label>
-                        <input type="radio" name="radio" checked="">
-                        <span>08:00</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>08:30</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>09:00</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>09:30</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>10:00</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>10:30</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>11:00</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>11:30</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>12:00</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>12:30</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>13:00</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>13:30</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>14:00</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>14:30</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>15:00</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>15:30</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>16:00</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>16:30</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>17:00</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>17:30</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>18:00</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>18:30</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>19:00</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>19:30</span>
-                    </label>
-                </div>
-            </div>
-
-
-
-        <p id="aviso">Lembre-se de sempre estar em casa nos horários e dias marcados.<br> Não será disponibilizado
-            reembolso sem aviso prévio de ausência.</p>
-
-        <h2>Selecione as opções de pagamento abaixo</h2>
-
-        <!-- ------------------------------------------------- -->
-
-        <div class="forma-pagamento">
-
-            <div class="card-span">
-                <div class="card"><i style="color: rgb(222, 28, 28);" class="bi bi-credit-card"></i><br>
-                    <span>
-                        <p>Cartão de crédito ou débito</p>
-                    </span>
-                </div>
-            </div>
-
-            <div class="pix-span">
-                <div class="card1"><i style="color: rgb(255, 119, 0);" class="bi bi-wallet2"></i><br>
-                    <span>
-                        <p>Pix</p>
-                    </span>
-
-                </div>
-            </div>
-
-            <div class="dinheiro-span">
-                <div class="card2"><i style="color: green;" class="bi bi-cash-stack"></i><br>
-                    <span>
-                        <p>Dinheiro</p>
-                    </span>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!------------------------------------------------------->
-
-    <div class="div-card">
-
-        <div id="b1"></div>
-        <div id="b2"></div>
-
-        <div class="grup-cards">
-            <label for="agencia">Nome registrado no cartão</label>
-            <input type="text" class="input-cards">
-        </div>
-
-        <div class="grup-cards">
-            <label for="number-card">Número do cartão</label>
-            <input type="text" class="input-cards">
-        </div>
-
-        <div class="teste">
-            <div class="grup-cards">
-                <label for="cvv">Código de segurança</label>
-                <input type="text" class="input-cards">
-            </div>
-
-            <div class="grup-cards">
-                <label for="validade">Data de Experiração</label>
-                <select name="mes" id="mes">
-                    <option value="m1">01</option>
-                    <option value="m2">02</option>
-                    <option value="m3">03</option>
-                    <option value="m4">04</option>
-                    <option value="m5">05</option>
-                    <option value="m6">06</option>
-                    <option value="m7">07</option>
-                    <option value="m8">08</option>
-                    <option value="m9">09</option>
-                    <option value="m10">10</option>
-                    <option value="m11">11</option>
-                    <option value="m12">12</option>
-                </select>
-
-                <div class="ano">
-                    <select name="mes" id="ano">
-                        <option value="a1">2023</option>
-                        <option value="a2">2024</option>
-                        <option value="a3">2025</option>
-                        <option value="a4">2026</option>
-                        <option value="a5">2027</option>
-                        <option value="a6">2028</option>
-                        <option value="a7">2029</option>
-                        <option value="a8">2030</option>
-                        <option value="a9">2031</option>
-                        <option value="a10">2032</option>
-                        <option value="a11">2033</option>
-                        <option value="a12">2034</option>
-                    </select>
-                </div>
-            </div>
-
-        </div>
-
-        <button id="btn-troca"><a href="#">Confirmar pagamento</button></a>
-        <button id="btn-confirm"><a href="#">Trocar plano</button></a>
-
-    </div>
-
-    <!-- --------------------------------------------------------------------------- -->
-
-    <div class="div-pix">
-        <div id="b3"></div>
-        <div id="b4"></div>
-        <div id="b5"></div>
-        <h1>EscaneieQrcode ou copie a chave aleatória</h1>
-        <p>Confirme o pagamento após efetua-lo caso contrário seu pagamento será invalidado</p>
-        <i class="bi bi-qr-code"></i>
-        <div class="input-pix">
-            <label for="pix">Copie o código para pagamento</label>
-            <input type="text" id="meuInput" value="Qrer4rgtg4g4454t1w2" readonly>
-            <button id="botaoCopiar">
-                <i class="bi bi-clipboard"></i>
-            </button>
-        </div>
-        <button id="confirmar-pix"><a href="#">Confirmar pagamento</a></button>
-        <button id="trocar-pix"><a href="#">Trocar plano</a></button>
-    </div>
-
-    <!-- -------------------------------------------DIV DINHEIRO------------------------------------------------- -->
-
-    <div class="div-dinheiro">
-        <h1>Entregue o pagamento antes do serviço</h1>
-        <p>Ao chegarmos em sua residência, será necessário efetuar o pagamento antes do atendimento, caso não aceite,
-            terá que arcar com o custo de R$20,00</p>
-        <div class="check-ciente">
-            <label class="checkbox-wrapper">
-                <input type="checkbox" id="check" hidden="" required>
-                <h1 id="eu-li">Eu concordo e estou ciente a respeito</h1></input>
-                <label for="check" class="checkmark"></label>
-            </label>
-        </div>
-
-        <div class="input-troco">
-            <label for="troco">Precisa de Troco?</label>
-            <div class="opcao">
-                <input type="radio" name="sim-nao" required>
-                <label for="sim">Sim</label>
-                <input type="radio" name="sim-nao" required>
-                <label for="não">Não</label>
-            </div>
-            <div class="input-valor">
-                <label for="valor">Valor do troco</label>
-                <input type="text" maxlength="4" minlength="0" id="input-valor-troco">
-            </div>
-        </div>
-
-        <div id="b6"></div>
-        <div id="b7"></div>
-        <div id="b8"></div>
-
-        <button id="confirmar-dinheiro"><a href="#">Confirmar informações</a></button>
-        <button id="trocar-dinheiro"><a href="#">Trocar plano</a></button>
-    </div>
-
-    <!-- ---------------------------------------------------------------------------------------->
-    <div class="espaco">
-
-    </div>
-
-
-    <script>
-
-        //CARD
-
-        var span_card = document.querySelector('.card-span');
-
-        span_card.addEventListener('click', function () {
-            var conteudo_card = document.querySelector('.div-card');
-
-            if (conteudo_card.classList.contains('mostrar')) {
-                //span.innerHTML = "Cartão de crédito ou débito"
-                conteudo_card.classList.remove('mostrar')
-            } else {
-                //span.innerHTML = "Cartão de crédito ou débito"
-                conteudo_card.classList.add('mostrar')
-
-            }
-        })
-
-        var cor_card = document.querySelector('.card-span')
-        cor_card.addEventListener('click', function () {
-            var conteudo_card = document.querySelector('.card');
-            if (conteudo_card.classList.contains('cor-card')) {
-
-                conteudo_card.classList.remove('cor-card')
-
-            } else {
-              
-                conteudo_card.classList.add('cor-card')
-
-            }
-        })
-        
-
-        //PIX
-
-        var span_pix = document.querySelector('.pix-span');
-
-        span_pix.addEventListener('click', function () {
-            var conteudo_pix = document.querySelector('.div-pix');
-
-            if (conteudo_pix.classList.contains('mostrar')) {
-                //span.innerHTML = "Pix"
-                conteudo_pix.classList.remove('mostrar')
-            } else {
-                //span.innerHTML = "Pix"
-                conteudo_pix.classList.add('mostrar')
-            }
-        })
-
-        var cor_pix = document.querySelector('.pix-span')
-        cor_pix.addEventListener('click', function () {
-            var conteudo_pix = document.querySelector('.card1');
-            if (conteudo_pix.classList.contains('cor-card')) {
-
-                conteudo_pix.classList.remove('cor-card')
-
-            } else {
-              
-                conteudo_pix.classList.add('cor-card')
-
-            }
-        })
-
-        //DINHEIRO
-
-        var span_din = document.querySelector('.dinheiro-span');
-        span_din.addEventListener('click', function () {
-            var conteudo_din = document.querySelector('.div-dinheiro');
-
-            if (conteudo_din.classList.contains('mostrar')) {
-                //span.innerHTML = "Cartão de crédito ou débito"
-                conteudo_din.classList.remove('mostrar')
-            } else {
-                //span.innerHTML = "Cartão de crédito ou débito"
-                conteudo_din.classList.add('mostrar')
-
-            }
-        })
-
-        var cor_din = document.querySelector('.dinheiro-span')
-        cor_din.addEventListener('click', function () {
-            var conteudo_din = document.querySelector('.card2');
-            if (conteudo_din.classList.contains('cor-card')) {
-
-                conteudo_din.classList.remove('cor-card')
-
-            } else {
-              
-                conteudo_din.classList.add('cor-card')
-
-            }
-        })
-
-        const input = document.getElementById("meuInput");
-        const botaoCopiar = document.getElementById("botaoCopiar");
-
-        botaoCopiar.addEventListener("click", function () {
-            input.select();
-            input.setSelectionRange(0, input.value.length);
-            document.execCommand("copy");
-        });
-    </script>
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-    <script> $('#input-valor-troco').mask('R$00,00');</script>
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-    <script> $('#horario').mask('00:00h');</script>
-
-
-</body>
-
-</html>
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(148, 187, 233);
+    background: linear-gradient(90deg, rgba(148, 187, 233, 1) 0%, rgba(101, 139, 224, 1) 53%, rgba(57, 107, 219, 1) 100%);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* CABEÇALHO */
+
+.azul {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background-color: rgb(59, 59, 228);
+    z-index: 2;
+}
+
+.azul img {
+    display: block;
+    margin: auto;
+    margin-top: -15px;
+    width: 500px;
+}
+
+/* MENU LATERAL  */
+
+.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 40px 0 40px 1%;
+    box-shadow: 5px 0 0 rgb(59, 59, 228);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
+    z-index: 3;
+}
+
+.menu-lateral.expandir {
+    width: 300px;
+}
+
+.bnt_expandir {
+    width: 100%;
+    padding: 30px;
+}
+
+.bnt_expandir>i {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: -20px;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item_menu {
+    transition: .3s;
+}
+
+ul li.ativo {
+    background-color: rgb(59, 59, 228);
+}
+
+ul li.item_menu:hover {
+    background-color: rgb(59, 59, 228);
+}
+
+ul li.item_menu a {
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 25px;
+    line-height: 40px;
+}
+
+ul li.item_menu a .txt-link {
+    margin-left: 65px;
+    transition: .5s;
+    opacity: 0;
+}
+
+.menu-lateral.expandir .txt-link {
+    margin-left: 35px;
+    opacity: 1;
+}
+
+ul li.item_menu a .icon>i {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+/*------------------------------- RESTO DO SITE--------------------------------*/
+
+.horario-pagamento {
+    position: absolute;
+    margin-top: -250px;
+    z-index: 1;
+}
+
+
+h1 {
+    margin-top: 1000px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#horario {
+    text-align: center;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    margin-left: 300px;
+}
+
+#aviso {
+    text-align: center;
+}
+
+/*----------------------------------- FORMAS DE PAGAMENTO -------------------------- */
+
+.forma-pagamento p {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.forma-pagamento {
+    display: flex;
+    margin-left: 50px;
+}
+
+.forma-pagamento i {
+    font-size: 100px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mostrar {
+    height: 260px !important;
+    width: 600px !important;
+    transition: .7s;
+}
+
+/* ------------------------------------------------DIV CARD--------------------------------- */
+
+.div-card {
+    background-color: aliceblue;
+    height: 260px;
+    width: 600px;
+    border-radius: 10px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.card {
+    box-sizing: border-box;
+    width: 190px;
+    height: 254px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    background-color: rgba(208, 203, 202, 0.725);
+}
+
+.card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.card1 {
+    box-sizing: border-box;
+    width: 190px;
+    height: 254px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.card1:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    background-color: rgba(208, 203, 202, 0.725);
+}
+
+.card1:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.card2 {
+    box-sizing: border-box;
+    width: 190px;
+    height: 254px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.card2:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    background-color: rgba(208, 203, 202, 0.725);
+}
+
+.card2:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+
+/* ------------------------------------------------FIM DIV CARD--------------------------------- */
+
+/*--------------------------------------------------------------- INPUT CARDS------------------------------------------  */
+
+.grup-cards {
+    margin-left: 50px;
+    margin: 20px;
+
+}
+
+.grup-cards input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00001c;
+    margin-top: 15px
+}
+
+.grup-cards input:hover {
+    background-color: #eeeeee75;
+}
+
+.grup-cards input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.grup-cards label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.teste {
+    margin-left: 230px;
+    margin-top: -200px;
+}
+
+.espaco {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: transparent;
+    margin-top: 1850px;
+}
+
+.grup-cards select {
+    border: none;
+    outline: 1px solid #8680f6;
+    box-shadow: 1px 1px 6px #00001c;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 15px;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    width: 60px;
+    height: 45px;
+}
+
+.ano select {
+    display: flex;
+    margin-left: 80px;
+    margin-top: -45px;
+    width: 85px;
+    height: 45px;
+}
+
+option {
+    text-align: center;
+    background-color: #babae7;
+    color: #000;
+    height: 20px;
+}
+
+#b1 {
+    background-color: rgb(98, 98, 236);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 540px;
+    margin-top: -10px;
+
+}
+
+#b2 {
+    background-color: rgb(98, 98, 236);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -60px;
+}
+
+/*--------------------------------------------------------------- FIM INPUT CARDS------------------------------------------  */
+
+/*-------------------------------------- BOTÕES CARD -------------------------- */
+
+#btn-confirm {
+    position: absolute;
+    margin-left: 440px;
+    margin-top: -5px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #000;
+    cursor: pointer;
+}
+
+#btn-confirm:hover {
+    background-color: #000000bf;
+}
+
+#btn-confirm a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+#btn-troca {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: -5px;
+    border-radius: 10px;
+    height: 40px;
+    width: 300px;
+    border: none;
+    background-color: rgb(98, 98, 236);
+    cursor: pointer;
+}
+
+#btn-troca:hover {
+    background-color: rgba(98, 98, 236, 0.734);
+}
+
+#btn-troca a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+/*-------------------------------------- FIM BOTÕES CARD ------------------------------- */
+
+
+/*------------------------------------- DIV PIX--------------------------------------- */
+
+.div-pix {
+    background-color: aliceblue;
+    height: 260px;
+    width: 600px;
+    border-radius: 10px;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.div-pix h1 {
+    margin-top: 0;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.div-pix p {
+    text-align: center;
+    margin-top: -30px;
+}
+
+.div-pix i {
+    font-size: 120px;
+    margin-left: 30px;
+}
+
+/*------------------------------------- DIV PIX--------------------------------------- */
+
+/*------------------------------------- INPUT PIX--------------------------------------- */
+
+.input-pix {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -135px;
+}
+
+.input-pix input {
+    width: 170px;
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00001c;
+    margin-top: 15px
+}
+
+.input-pix input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-pix input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-pix label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-pix i {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.input-pix button {
+    background-color: transparent;
+    border: none;
+}
+
+/*------------------------------------- FIM INPUT PIX--------------------------------------- */
+
+
+#confirmar-pix {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 95px;
+    border-radius: 10px;
+    height: 35px;
+    width: 200px;
+    border: none;
+    background-color: rgb(98, 98, 236);
+    cursor: pointer;
+}
+
+#confirmar-pix:hover {
+    background-color: rgba(98, 98, 236, 0.734);
+}
+
+#confirmar-pix a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+#trocar-pix {
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 95px;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #000;
+    cursor: pointer;
+}
+
+#trocar-pix:hover {
+    background-color: #000000bf;
+}
+
+#trocar-pix a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+#b3 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 550px;
+    margin-top: 80px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+}
+
+#b4 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 550px;
+    margin-top: 110px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+}
+
+#b5 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 500px;
+    margin-top: 90px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+}
+
+/*--------------------------------------------- DIV DINHEIRO----------------------------------------- */
+
+.div-dinheiro {
+    background-color: #fff;
+    height: 260px;
+    width: 600px;
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.div-dinheiro h1 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 27px;
+    padding: 15px;
+}
+
+.div-dinheiro p {
+    text-align: center;
+    margin-top: -45px;
+    padding: 20px;
+}
+
+/* ------------------------------ CHECK CIENTE ------------------------------  */
+
+.checkmark {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #909090;
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 250px;
+    margin-top: -20px;
+}
+
+#check:checked~.checkmark {
+    background-color: #08bb68;
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(10);
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+#check:checked~.checkmark::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(1);
+}
+
+#eu-li {
+    position: absolute;
+    margin-left: 270px;
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+/* ------------------------------ FIM CHECK CIENTE ------------------------------  */
+
+/* ------------------------------------ TROCO -------------------------------------- */
+
+.input-troco {
+    margin-left: 80px;
+    margin-top: -25px;
+}
+
+.opcao{
+    margin-top: 5px;
+}
+
+/* ------------------------------------ FIM TROCO -------------------------------------- */
+
+/* --------------------------------INPUT VALOR------------------------------------- */
+
+.input-valor {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.input-valor input {
+    width: 90px;
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00001c;
+    margin-top: 15px
+}
+
+.input-valor input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-valor input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-valor label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #000000c0;
+}
+
+/* --------------------------------FIM INPUT VALOR------------------------------------- */
+
+/* --------------------------------BOTAO DIN ------------------------------------- */
+
+
+#confirmar-dinheiro {
+    position: absolute;
+    margin-left: 310px;
+    margin-top: -90px;
+    border-radius: 10px;
+    height: 35px;
+    width: 200px;
+    border: none;
+    background-color: rgb(98, 98, 236);
+    cursor: pointer;
+}
+
+#confirmar-dinheiro:hover {
+    background-color: rgba(98, 98, 236, 0.734);
+}
+
+#confirmar-dinheiro a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+#trocar-dinheiro {
+    position: absolute;
+    margin-left: 430px;
+    margin-top: -40px;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #000;
+    cursor: pointer;
+}
+
+#trocar-dinheiro:hover {
+    background-color: #000000bf;
+}
+
+#trocar-dinheiro a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+#b6 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 200px;
+    margin-top: -20px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+}
+
+#b7 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 250px;
+    margin-top: -20px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+}
+
+#b8 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 300px;
+    margin-top: -20px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+}
+
+/* ------------------------- SELECIONAR HORÁRIO ----------------------------- */
+
+:focus {
+    outline: 0;
+    border-color: 1px  #2260ff;
+    box-shadow: 0 0 0 4px #b5c9fc;
+  }  
+
+  .horario div {
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: center;
+    width: 500px;
+    margin-left: 100px;
+    overflow-x: scroll;
+
+  }
+  
+  .horario label {
+    height: 35px;
+  }
+
+  .horario input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .horario input[type="radio"]:checked + span {
+    box-shadow: 0 0 0 0.0625em #0043ed;
+    background-color: #dee7ff;
+    z-index: 1;
+    color: #0043ed;
+  }
+  
+  label span {
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.375em .75em;
+    position: relative;
+    margin-left: .0625em;
+    box-shadow: 0 0 0 0.0625em #b5bfd9;
+    letter-spacing: .05em;
+    color: #3e4963;
+    text-align: center;
+    transition: background-color .5s ease;
+  }
+  
+  label:first-child span {
+    border-radius: .375em 0 0 .375em;
+  }
+  
+  label:last-child span {
+    border-radius: 0 .375em .375em 0;
+  }
+  
+  /* ------------------------- FIM SELECIONAR HORÁRIO ----------------------------- */
+
+  .cor-card {
+    background: #ffffff;
+    transition: 2s;
+}
