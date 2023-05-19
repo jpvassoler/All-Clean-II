@@ -107,11 +107,11 @@ ul li.item_menu a .icon>i {
     margin-left: 10px;
 }
 
-/* RESTO DO SITE  */
- 
+/*------------------------------- RESTO DO SITE--------------------------------*/
+
 .horario-pagamento {
     position: absolute;
-    margin-top:-250px;
+    margin-top: -250px;
     z-index: 1;
 }
 
@@ -139,9 +139,46 @@ h2 {
     text-align: center;
 }
 
+/*----------------------------------- FORMAS DE PAGAMENTO -------------------------- */
+
+.forma-pagamento p {
+    margin-top: 150px;
+    text-align: center;
+}
+
 .forma-pagamento {
     display: flex;
     margin-left: 50px;
+}
+
+.forma-pagamento i {
+    font-size: 100px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mostrar {
+    height: 260px !important;
+    width: 600px !important;
+    transition: .7s;
+}
+
+/* ------------------------------------------------DIV CARD--------------------------------- */
+
+.div-card {
+    background-color: aliceblue;
+    height: 260px;
+    width: 600px;
+    border-radius: 10px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
 
 .card {
@@ -164,61 +201,92 @@ h2 {
     color: black;
     margin-left: 20px;
     margin-top: 10px;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     border: 1px solid black;
     transform: scale(1.05);
-    background-color: rgba(150, 247, 115, 0.725);
-  }
-  
-  .card:active {
+    background-color: rgba(208, 203, 202, 0.725);
+}
+
+.card:active {
     transform: scale(0.95) rotateZ(1.7deg);
-  }
+}
 
-  .forma-pagamento p {
-   margin-top: 150px;
-   text-align: center;
+.card1 {
+    box-sizing: border-box;
+    width: 190px;
+    height: 254px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.card1:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    background-color: rgba(208, 203, 202, 0.725);
+}
+
+.card1:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.card2 {
+    box-sizing: border-box;
+    width: 190px;
+    height: 254px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.card2:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    background-color: rgba(208, 203, 202, 0.725);
+}
+
+.card2:active {
+    transform: scale(0.95) rotateZ(1.7deg);
 }
 
 
-  .forma-pagamento i {
-    font-size: 100px;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+/* ------------------------------------------------FIM DIV CARD--------------------------------- */
 
-  /* FORMAS DE PAGAMENTO  */
+/*--------------------------------------------------------------- INPUT CARDS------------------------------------------  */
 
-  .mostrar {
-    height: 260px  !important;
-    width: 600px !important;
-    transition: .7s;
-}
-
-  .div-card {
-    background-color: aliceblue;
-    height: 260px;
-    width: 600px;
-    border-radius: 10px;
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 0;
-    overflow: hidden;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
-  }
-
- /* INPUT CARDS  */
-
- .grup-cards {
+.grup-cards {
     margin-left: 50px;
     margin: 20px;
-    
- }
+
+}
 
 .grup-cards input {
     margin: 0.6rem 0;
@@ -253,7 +321,7 @@ h2 {
     position: absolute;
     height: 10px;
     width: 10px;
-    background-color:transparent;
+    background-color: transparent;
     margin-top: 1850px;
 }
 
@@ -286,7 +354,7 @@ option {
     height: 20px;
 }
 
-#b1{
+#b1 {
     background-color: rgb(98, 98, 236);
     width: 100px;
     height: 100px;
@@ -294,10 +362,10 @@ option {
     position: absolute;
     margin-left: 540px;
     margin-top: -10px;
-    
+
 }
 
-#b2{
+#b2 {
     background-color: rgb(98, 98, 236);
     width: 100px;
     height: 100px;
@@ -307,7 +375,9 @@ option {
     margin-top: -60px;
 }
 
-/* BOTÕES CARD  */
+/*--------------------------------------------------------------- FIM INPUT CARDS------------------------------------------  */
+
+/*-------------------------------------- BOTÕES CARD -------------------------- */
 
 #btn-confirm {
     position: absolute;
@@ -353,9 +423,10 @@ option {
     font-size: 15px;
 }
 
-/* FIM BOTÕES CARD  */
+/*-------------------------------------- FIM BOTÕES CARD ------------------------------- */
 
-/* DIV PIX */
+
+/*------------------------------------- DIV PIX--------------------------------------- */
 
 .div-pix {
     background-color: aliceblue;
@@ -363,6 +434,8 @@ option {
     width: 600px;
     border-radius: 10px;
     position: absolute;
+    height: 0;
+    overflow: hidden;
     top: 110%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -386,13 +459,16 @@ option {
     margin-left: 30px;
 }
 
+/*------------------------------------- DIV PIX--------------------------------------- */
+
+/*------------------------------------- INPUT PIX--------------------------------------- */
 
 .input-pix {
     position: absolute;
     margin-left: 200px;
     margin-top: -135px;
 }
- 
+
 .input-pix input {
     width: 170px;
     margin: 0.6rem 0;
@@ -430,39 +506,42 @@ option {
     border: none;
 }
 
-#confirmar-pix {
-        position: absolute;
-        margin-left: 40px;
-        margin-top: 95px;
-        border-radius: 10px;
-        height: 35px;
-        width: 200px;
-        border: none;
-        background-color: rgb(98, 98, 236);
-        cursor: pointer;
-    }
-    
-    #confirmar-pix:hover {
-        background-color: rgba(98, 98, 236, 0.734);
-    }
-    
-    #confirmar-pix a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 15px;
-    }
+/*------------------------------------- FIM INPUT PIX--------------------------------------- */
 
-    #trocar-pix {
-        position: absolute;
-        margin-left: 280px;
-        margin-top: 95px;
-        width: 150px;
-        height: 35px;
-        border-radius: 10px;
-        border: none;
-        background-color: #000;
-        cursor: pointer;
-    }
+
+#confirmar-pix {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 95px;
+    border-radius: 10px;
+    height: 35px;
+    width: 200px;
+    border: none;
+    background-color: rgb(98, 98, 236);
+    cursor: pointer;
+}
+
+#confirmar-pix:hover {
+    background-color: rgba(98, 98, 236, 0.734);
+}
+
+#confirmar-pix a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+#trocar-pix {
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 95px;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #000;
+    cursor: pointer;
+}
 
 #trocar-pix:hover {
     background-color: #000000bf;
@@ -472,4 +551,303 @@ option {
     text-decoration: none;
     color: #fff;
     font-size: 14px;
+}
+
+#b3 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 550px;
+    margin-top: 80px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+}
+
+#b4 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 550px;
+    margin-top: 110px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+}
+
+#b5 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 500px;
+    margin-top: 90px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+}
+
+/*--------------------------------------------- DIV DINHEIRO----------------------------------------- */
+
+.div-dinheiro {
+    background-color: #fff;
+    height: 260px;
+    width: 600px;
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.div-dinheiro h1 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 27px;
+    padding: 15px;
+}
+
+.div-dinheiro p {
+    text-align: center;
+    margin-top: -45px;
+    padding: 20px;
+}
+
+/* ------------------------------ CHECK CIENTE ------------------------------  */
+
+.checkmark {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #909090;
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 250px;
+    margin-top: -20px;
+}
+
+#check:checked~.checkmark {
+    background-color: #08bb68;
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(10);
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+#check:checked~.checkmark::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(1);
+}
+
+#eu-li {
+    position: absolute;
+    margin-left: 270px;
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+/* ------------------------------ FIM CHECK CIENTE ------------------------------  */
+
+/* ------------------------------------ TROCO -------------------------------------- */
+
+.input-troco {
+    margin-left: 80px;
+    margin-top: -25px;
+}
+
+.opcao{
+    margin-top: 5px;
+}
+
+/* ------------------------------------ FIM TROCO -------------------------------------- */
+
+/* --------------------------------INPUT VALOR------------------------------------- */
+
+.input-valor {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.input-valor input {
+    width: 90px;
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00001c;
+    margin-top: 15px
+}
+
+.input-valor input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-valor input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-valor label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #000000c0;
+}
+
+/* --------------------------------FIM INPUT VALOR------------------------------------- */
+
+/* --------------------------------BOTAO DIN ------------------------------------- */
+
+
+#confirmar-dinheiro {
+    position: absolute;
+    margin-left: 310px;
+    margin-top: -90px;
+    border-radius: 10px;
+    height: 35px;
+    width: 200px;
+    border: none;
+    background-color: rgb(98, 98, 236);
+    cursor: pointer;
+}
+
+#confirmar-dinheiro:hover {
+    background-color: rgba(98, 98, 236, 0.734);
+}
+
+#confirmar-dinheiro a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+#trocar-dinheiro {
+    position: absolute;
+    margin-left: 430px;
+    margin-top: -40px;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #000;
+    cursor: pointer;
+}
+
+#trocar-dinheiro:hover {
+    background-color: #000000bf;
+}
+
+#trocar-dinheiro a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+#b6 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 200px;
+    margin-top: -20px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+}
+
+#b7 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 250px;
+    margin-top: -20px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+}
+
+#b8 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 300px;
+    margin-top: -20px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+}
+
+/* ------------------------- SELECIONAR HORÁRIO ----------------------------- */
+
+:focus {
+    outline: 0;
+    border-color: 1px  #2260ff;
+    box-shadow: 0 0 0 4px #b5c9fc;
+  }  
+
+  .horario div {
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: center;
+    width: 500px;
+    margin-left: 100px;
+    overflow-x: scroll;
+
+  }
+  
+  .horario label {
+    height: 35px;
+  }
+
+  .horario input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .horario input[type="radio"]:checked + span {
+    box-shadow: 0 0 0 0.0625em #0043ed;
+    background-color: #dee7ff;
+    z-index: 1;
+    color: #0043ed;
+  }
+  
+  label span {
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.375em .75em;
+    position: relative;
+    margin-left: .0625em;
+    box-shadow: 0 0 0 0.0625em #b5bfd9;
+    letter-spacing: .05em;
+    color: #3e4963;
+    text-align: center;
+    transition: background-color .5s ease;
+  }
+  
+  label:first-child span {
+    border-radius: .375em 0 0 .375em;
+  }
+  
+  label:last-child span {
+    border-radius: 0 .375em .375em 0;
+  }
+  
+  /* ------------------------- FIM SELECIONAR HORÁRIO ----------------------------- */
+
+  .cor-card {
+    background: #ffffff;
+    transition: 2s;
 }
