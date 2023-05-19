@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Clean</title>
+    <link rel="stylesheet" href="Agendamentos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+
+    <nav class="menu-lateral">
+
+        <div class="bnt_expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+
+        <ul>
+
+            <li class="item_menu">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PgInicial.html#">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Inicial</span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Perfil.html">
+                    <span class="icon"><i class="bi bi-person"></i></span>
+                    <span class="txt-link">Perfil</span>
+                </a>
+            </li>
+
+
+            <li class="item_menu">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Historico.html">
+                    <span class="icon"><i class="bi bi-clock-history"></i></span>
+                    <span class="txt-link">Histórico</span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Contato.html">
+                    <span class="icon"><i class="bi bi-telephone"></i></span>
+                    <span class="txt-link">Contato</span>
+                </a>
+
+            </li>
+
+            <li class="item_menu ativo">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Agendamentos.html">
+                    <span class="icon"><i class="bi bi-calendar2-check"></i></span>
+                    <span class="txt-link">Agendamentos</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="menu.js"></script>
+
+
+    <div class="azul">
+        <img src="img/logo-nome.png" alt="">
+    </div>
+
+
+    <div class="title">
+        <h2>Selecione o plano desejado</h2>
+    </div>
+
+    <!-- --------------------------------------------------INPUT RADIOS---------------------------------- -->
+
+    <div class="radio-inputs">
+        <label class="radio">
+            <input type="radio" name="radio" checked="" id="span-basico">
+            <span class="name">Básico</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="radio" id="span-intermediario">
+            <span class="name">Intermediário</span>
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="radio" id="span-avançado">
+            <span class="name">Avançado</span>
+        </label>
+    </div>
+
+    <div class="pai-inter">
+        <h1>Intermediário</h1>
+        <div class="b0"></div>
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+        <div class="b4"></div>
+        <div class="dinheiro">
+            <div class="rs">R$</div>
+            <div class="valor"><b>50,00</b></div>
+        </div>
+        <p>A praticidade está apenas a alguns cliques de você</b></p>
+        <button class="escolher"><a href="#"><b>Escolher plano</b></a></button>
+    </div>
+    <!-- --------------------------------PLANO AVANÇADO-------------------------- -->
+
+    <div class="pai-avan">
+        <h1>Intermediário</h1>
+        <div class="b0"></div>
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+        <div class="b4"></div>
+        <div class="dinheiro">
+            <div class="rs">R$</div>
+            <div class="valor"><b>80,00</b></div>
+        </div>
+        <p>A praticidade está apenas a alguns cliques de você</b></p>
+        <button class="escolher"><a href="#"><b>Escolher plano</b></a></button>
+    </div>
+
+    <!-- ----------------------------------PLANO BÁSICO------------------------------ -->
+
+    <div class="pai-basic">
+        <h1>Básico</h1>
+        <div class="b0"></div>
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+        <div class="b4"></div>
+        <div class="dinheiro">
+            <div class="rs">R$</div>
+            <div class="valor"><b>20,00</b></div>
+        </div>
+        <p>A praticidade está apenas a alguns cliques de você</b></p>
+        <button class="escolher"><a href="#"><b>Escolher plano</b></a></button>
+    </div>
+
+    <!-- ----------------------------------------FIM PLANOS------------------------------------------------ -->
+
+<!-- ----------------------------------------------------CARDS------------------------------------------------------ -->
+
+    <div class="cards">
+        <div class="card">
+            <div class="pricing-block-content">
+                <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+                    <p class="price-number">Plano Básico<span class="price-integer"></span></p>
+                </div>
+                <ul class="check-list" role="list">
+                    <li class="check-list-item"><svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                            viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(102, 78, 255);">
+                            <defs>
+                                <clipPath id="id1">
+                                    <path fill="#664eff" clip-rule="nonzero"
+                                        d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                    </path>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#id1)">
+                                <path fill-rule="nonzero" fill-opacity="1"
+                                    d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                    fill="#664eff"></path>
+                            </g>
+                        </svg>Camiseta de malha</li>
+                    <li class="check-list-item"><svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                            viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(102, 78, 255);">
+                            <defs>
+                                <clipPath id="id1">
+                                    <path fill="#664eff" clip-rule="nonzero"
+                                        d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                    </path>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#id1)">
+                                <path fill-rule="nonzero" fill-opacity="1"
+                                    d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                    fill="#664eff"></path>
+                            </g>
+                        </svg>Camisa de algodão</li>
+                    <li class="check-list-item"><svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                            viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(102, 78, 255);">
+                            <defs>
+                                <clipPath id="id1">
+                                    <path fill="#664eff" clip-rule="nonzero"
+                                        d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                    </path>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#id1)">
+                                <path fill-rule="nonzero" fill-opacity="1"
+                                    d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                    fill="#664eff"></path>
+                            </g>
+                        </svg>Calça</li>
+                    <li class="check-list-item"><svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                            viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(102, 78, 255);">
+                            <defs>
+                                <clipPath id="id1">
+                                    <path fill="#664eff" clip-rule="nonzero"
+                                        d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                    </path>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#id1)">
+                                <path fill-rule="nonzero" fill-opacity="1"
+                                    d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                    fill="#664eff"></path>
+                            </g>
+                        </svg>Toalhas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card1">
+            <div class="pricing-block-content">
+                <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+                    <p class="price-number">Plano Intermediário<span class="price-integer"></span></p>
+                </div>
+                <ul class="check-list" role="list">
+                    <li class="check-list-item"><svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                            viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(102, 78, 255);">
+                            <defs>
+                                <clipPath id="id1">
+                                    <path fill="#664eff" clip-rule="nonzero"
+                                        d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                    </path>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#id1)">
+                                <path fill-rule="nonzero" fill-opacity="1"
+                                    d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                    fill="#664eff"></path>
+                            </g>
+                        </svg>Plano Básico</li>
+                    <li class="check-list-item"><svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                            viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(102, 78, 255);">
+                            <defs>
+                                <clipPath id="id1">
+                                    <path fill="#664eff" clip-rule="nonzero"
+                                        d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                    </path>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#id1)">
+                                <path fill-rule="nonzero" fill-opacity="1"
+                                    d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                    fill="#664eff"></path>
+                            </g>
+                        </svg>Bermuda</li>
+                    <li class="check-list-item"><svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                            viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(102, 78, 255);">
+                            <defs>
+                                <clipPath id="id1">
+                                    <path fill="#664eff" clip-rule="nonzero"
+                                        d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                    </path>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#id1)">
+                                <path fill-rule="nonzero" fill-opacity="1"
+                                    d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                    fill="#664eff"></path>
+                            </g>
+                        </svg>Vestido longo</li>
+                    <li class="check-list-item"><svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                            viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(102, 78, 255);">
+                            <defs>
+                                <clipPath id="id1">
+                                    <path fill="#664eff" clip-rule="nonzero"
+                                        d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                    </path>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#id1)">
+                                <path fill-rule="nonzero" fill-opacity="1"
+                                    d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                    fill="#664eff"></path>
+                            </g>
+                        </svg>Roupa de cama</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="pricing-block-content">
+                <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+                    <p class="price-number">Plano Avançado<span class="price-integer"></span></p>
+                </div>
+                <ul class="check-list" role="list">
+                    <li class="check-list-item"><svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                            viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(102, 78, 255);">
+                            <defs>
+                                <clipPath id="id1">
+                                    <path fill="#664eff" clip-rule="nonzero"
+                                        d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                    </path>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#id1)">
+                                <path fill-rule="nonzero" fill-opacity="1"
+                                    d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                    fill="#664eff"></path>
+                            </g>
+                        </svg>Plano Intermediário</li>
+                    <li class="check-list-item"><svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                            viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(102, 78, 255);">
+                            <defs>
+                                <clipPath id="id1">
+                                    <path fill="#664eff" clip-rule="nonzero"
+                                        d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                    </path>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#id1)">
+                                <path fill-rule="nonzero" fill-opacity="1"
+                                    d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                    fill="#664eff"></path>
+                            </g>
+                        </svg>Peças intímas</li>
+                    <li class="check-list-item"><svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                            viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(102, 78, 255);">
+                            <defs>
+                                <clipPath id="id1">
+                                    <path fill="#664eff" clip-rule="nonzero"
+                                        d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                    </path>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#id1)">
+                                <path fill-rule="nonzero" fill-opacity="1"
+                                    d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                    fill="#664eff"></path>
+                            </g>
+                        </svg>Vestido de festa</li>
+                    <li class="check-list-item"><svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                            viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(102, 78, 255);">
+                            <defs>
+                                <clipPath id="id1">
+                                    <path fill="#664eff" clip-rule="nonzero"
+                                        d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                    </path>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#id1)">
+                                <path fill-rule="nonzero" fill-opacity="1"
+                                    d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                    fill="#664eff"></path>
+                            </g>
+                        </svg>Terno</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Básico
+
+        var span_basic = document.querySelector('#span-basico');
+
+        span_basic.addEventListener('click', function () {
+            var conteudo_basic = document.querySelector('.pai-basic');
+
+            if (conteudo_basic.classList.contains('mostrar')) {
+               
+                conteudo_basic.classList.remove('mostrar')
+            } else {
+                
+                conteudo_basic.classList.add('mostrar')
+
+            }
+        })
+
+        var cor_card = document.querySelector('#span-basico')
+        cor_card.addEventListener('click', function () {
+            var conteudo_avan = document.querySelector('.card');
+            if (conteudo_avan.classList.contains('cor-card')) {
+
+                conteudo_avan.classList.remove('cor-card')
+
+            } else {
+              
+                conteudo_avan.classList.add('cor-card')
+
+            }
+        })
+
+
+        //Intermediario
+
+        var span_inter = document.querySelector('#span-intermediario');
+
+        span_inter.addEventListener('click', function () {
+            var conteudo_inter = document.querySelector('.pai-inter');
+
+            if (conteudo_inter.classList.contains('mostrar')) {
+                //span.innerHTML = "Pix"
+                conteudo_inter.classList.remove('mostrar')
+            } else {
+                //span.innerHTML = "Pix"
+                conteudo_inter.classList.add('mostrar')
+            }
+        })
+
+        var cor_card = document.querySelector('#span-intermediario')
+        cor_card.addEventListener('click', function () {
+            var conteudo_avan = document.querySelector('.card1');
+            if (conteudo_avan.classList.contains('cor-card')) {
+                //span.innerHTML = "Cartão de crédito ou débito"
+                conteudo_avan.classList.remove('cor-card')
+            } else {
+                //span.innerHTML = "Cartão de crédito ou débito"
+                conteudo_avan.classList.add('cor-card')
+
+            }
+        })
+
+
+// -------------------------------------------------------------------------
+
+        //Avançado
+
+        var span_avan = document.querySelector('#span-avançado');
+        span_avan.addEventListener('click', function () {
+            var conteudo_avan = document.querySelector('.pai-avan');
+
+            if (conteudo_avan.classList.contains('mostrar')) {
+                //span.innerHTML = "Cartão de crédito ou débito"
+                conteudo_avan.classList.remove('mostrar')
+            } else {
+                //span.innerHTML = "Cartão de crédito ou débito"
+                conteudo_avan.classList.add('mostrar')
+
+            }
+        })
+
+        var cor_card = document.querySelector('#span-avançado')
+        cor_card.addEventListener('click', function () {
+            var conteudo_avan = document.querySelector('.card2');
+            if (conteudo_avan.classList.contains('cor-card')) {
+                //span.innerHTML = "Cartão de crédito ou débito"
+                conteudo_avan.classList.remove('cor-card')
+            } else {
+                //span.innerHTML = "Cartão de crédito ou débito"
+                conteudo_avan.classList.add('cor-card')
+
+            }
+        })
+    </script>
+
+    <script>
+       
+    </script>
+
+</body>
+
+</html>
