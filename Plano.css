@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(148, 187, 233);
+    background: linear-gradient(90deg, rgba(148, 187, 233, 1) 0%, rgba(101, 139, 224, 1) 53%, rgba(57, 107, 219, 1) 100%);
+    font-family: 'Inter', sans-serif;
+    overflow: auto;
+}
+
+/* CABEÇALHO */
+
+.azul {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background-color: rgb(59, 59, 228);
+}
+
+.azul img {
+    display: block;
+    margin: auto;
+    margin-top: -15px;
+    width: 500px;
+}
+
+/* MENU LATERAL  */
+
+.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: rgb(167, 166, 166);
+    padding: 40px 0 40px 1%;
+    box-shadow: 5px 0 0 #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
+    z-index: 4;
+}
+
+.menu-lateral.expandir {
+    width: 300px;
+}
+
+.bnt_expandir {
+    width: 100%;
+    padding: 30px;
+}
+
+.bnt_expandir>i {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: -20px;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item_menu {
+    transition: .3s;
+}
+
+ul li.ativo {
+    background-color: rgb(59, 59, 228);
+}
+
+ul li.item_menu:hover {
+    background-color: rgb(59, 59, 228);
+}
+
+ul li.item_menu a {
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 25px;
+    line-height: 40px;
+}
+
+ul li.item_menu a .txt-link {
+    margin-left: 65px;
+    transition: .5s;
+    opacity: 0;
+}
+
+.menu-lateral.expandir .txt-link {
+    margin-left: 35px;
+    opacity: 1;
+}
+
+ul li.item_menu a .icon>i {
+    font-size: 30px;
+    margin-left: 10px;
+}
+/* FIM MENU LATERAL  */
+
+.title h2 {
+    position: fixed;
+    margin-left: 490px;
+    margin-top: -385px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.radio-inputs {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #000000;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 500px;
+    font-size: 14px;
+    margin-left: 500px;
+    margin-top: -330px;
+}
+
+.radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.radio-inputs .radio input {
+    display: none;
+}
+
+.radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: #fff;
+    transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked+.name {
+    background-color: #679beeaf;
+    font-weight: 600;
+}
+
+.radio-inputs a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* DIV BRANCA */
+
+.pai-inter {
+    position: fixed;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    height: 0;
+    overflow: hidden;
+}
+
+.pai-inter h1 {
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+.dinheiro {
+    display: flex;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.rs {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.valor {
+    font-size: 45px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.pai-inter p {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.escolher {
+    width: 80%;
+    height: 30px;
+    margin-left: 10%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0c55cb;
+    cursor: pointer;
+}
+
+.escolher:hover {
+    background-color: #0c55cbbf;
+}
+
+.escolher a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.b0 {
+    position: absolute;
+    background-color: #347cee;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin-left: 640px;
+    margin-top: -160px;
+}
+
+.b1 {
+    position: absolute;
+    background-color: #347cee;
+    border-radius: 100%;
+    margin-left: 550px;
+    margin-top: -120px;
+    width: 150px;
+    height: 150px;
+}
+
+.b2 {
+    position: absolute;
+    background-color: #347cee;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-left: 480px;
+    margin-top: -100px;
+}
+
+.b3 {
+    position: absolute;
+    background-color: #347cee;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-left: 400px;
+    margin-top: -120px;
+}
+
+.b4 {
+    position: absolute;
+    background-color: #347cee;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-left: 330px;
+    margin-top: -140px;
+}
+
+ 
+/* CARDS */
+
+.cards {
+    position: relative;
+    display: flex;
+    margin-top: 490px;
+    padding: -10px;
+}
+
+/*Neo Brutalism pricing card*/
+.card {
+    position: relative;
+    width: 240px;
+    height: 200px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: .5vmin solid #05060f;
+    box-shadow: .4rem .4rem #05060f;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-left: 300px;
+  }
+  
+  .price-value {
+    display: flex;
+    color: #05060f;
+    font-size: 1.8rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-top: -20px;
+  }
+    
+  /*Checklist*/
+  .check-list {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: -1.0rem;
+  }
+  
+  .check-list-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .card1 {
+    position: relative;
+    width: 320px;
+    height: 200px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: .5vmin solid #05060f;
+    box-shadow: .4rem .4rem #05060f;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .card2 {
+    position: relative;
+    width: 270px;
+    height: 200px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: .5vmin solid #05060f;
+    box-shadow: .4rem .4rem #05060f;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+/* --------------------------------PLANO AVANÇADO---------------------- */
+
+  .pai-avan {
+    position: fixed;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    height: 0;
+    overflow: hidden;
+}
+
+.pai-avan h1 {
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+.pai-avan p {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+/* -----------------------------------PLANO BASICO-------------------- */
+
+.pai-basic {
+    position: fixed;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    height: 0;
+    overflow: hidden;
+}
+
+.pai-basic h1 {
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+.pai-basic p {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.mostrar {
+    width: 50% !important;
+    height: 250px !important;
+    transition: .7s;
+}
+
+.cor-card {
+    background: #76eb7a;
+}
