@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Clean</title>
+    <link rel="stylesheet" href="Contato.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="azul">
+        <img src="img/logo-nome.png" alt="">
+    </div>
+
+    <nav class="menu-lateral">
+
+        <div class="bnt_expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+
+        <ul>
+
+            <li class="item_menu">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PgInicial.html#">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Inicial</span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Perfil.html">
+                    <span class="icon"><i class="bi bi-person"></i></span>
+                    <span class="txt-link">Perfil</span>
+                </a>
+            </li>
+
+
+            <li class="item_menu">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Historico.html">
+                    <span class="icon"><i class="bi bi-clock-history"></i></span>
+                    <span class="txt-link">Histórico</span>
+                </a>
+            </li>
+
+            <li class="item_menu ativo">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Contato.html">
+                    <span class="icon"><i class="bi bi-telephone"></i></span>
+                    <span class="txt-link">Contato</span>
+                </a>
+
+            </li>
+
+            <li class="item_menu">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Agendamentos.html">
+                    <span class="icon"><i class="bi bi-calendar2-check"></i></span>
+                    <span class="txt-link">Agendamentos</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="menu.js"></script>
+
+
+
+    <div class="pai">
+        <div class="par">
+            <h1>Estamos prontos para ajudar você</h1>
+        </div>
+        <p>Preencha as informações abaixo e envie para que sua mensagem seja encaminhada</p>
+        <div class="input-group">
+            <div class="input-box">
+                <label for="firsTname">Nome completo</label>
+                <input id="firstname" type="text" name="firstname" placeholder="Digite seu nome completo" minlength="1"
+                    maxlength="100" required>
+                <script src="https://unpkg.com/imask"></script>
+            </div>
+
+            <div class="input-box">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email" placeholder="Digite seu email" autocomplete="email"
+                    minlength="10" maxlength="100" required>
+            </div>
+
+            <div class="input-msg">
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="msg" cols="32" rows="16" placeholder="Digite aqui sua mensagem"
+                    required></textarea>
+            </div>
+
+            <div class="select-assunto">
+                <label for="assunto">Assunto da mensagem</label>
+                <select name="assunto" id="assunto">
+                    <option disabled selected>Selecione um opção</option>
+                    <option value="op1">Problemas com sua conta</option>
+                    <option value="op2">Atendimento</option>
+                    <option value="op3">Planos</option>
+                    <option value="op4">Dúvidas</option>
+                    <option value="op5" id="outro">Outro</option>
+                </select>
+
+                <div class="input-assunto">
+                    <input id="inputass" type="text" placeholder="Digite o assunto" required>
+                </div>
+
+            </div>
+        </div>
+
+        <button class="button">
+            <span class="text">Enviar mensagem</span>
+            <span class="iconb"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" data-icon="paper-plane"
+                    width="20px" aria-hidden="true">
+                    <path
+                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+                        fill="currentColor"></path>
+                </svg></span>
+        </button>
+
+
+    </div>
+
+    <script>
+       
+    </script>
+
+</body>
+
+
+
+</html>
