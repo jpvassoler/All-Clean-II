@@ -196,26 +196,18 @@
 
         tec.addEventListener('click', function () {
             var conteudo_termos = document.querySelector('.termos');
+            conteudo_termos.classList.add('mostrar-termos')
 
-
-            if (conteudo_termos.classList.contains('mostrar-termos')) {
-
-                conteudo_termos.classList.remove('mostrar-termos')
-
-            } else {
-                conteudo_termos.classList.add('mostrar-termos')
-
-            }
         })
 
-        // ---------------FECHAR TERMOS------------------
+            // ---------------FECHAR TERMOS------------------
 
-        var botao = document.querySelector('#arrow')
-        
-        botao.addEventListener('click', function () {
-            var termos = document.querySelector('.termos');
-            termos.classList.remove('mostrar-termos')
-        })
+            var botao = document.querySelector('#arrow')
+
+            botao.addEventListener('click', function () {
+                var termos = document.querySelector('.termos');
+                termos.classList.remove('mostrar-termos')
+            })
     </Script>
 
 </body>
