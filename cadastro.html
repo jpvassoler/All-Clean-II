@@ -5,41 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Clean</title>
-    <link rel="stylesheet" href="Style.css"> 
+    <link rel="stylesheet" href="Cadastro.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-    <div id="div1">
-        <div id="allclean">All Clean</div>
-        <div id="amelhor">A melhor maneira de lavar suas roupas
-                      e economizar.<br> Tudo ao mesmo tempo   !
+
+    <div class="container"> 
+        <div class="qd-azul">
+            <img src="img/logo-nome.png" id="all-clean">
+            <h2 id="frase-1">A melhor maneira de lavar suas roupas
+                e economizar.<br> Tudo ao mesmo tempo!
+            </h2>  
+            <button id="criar-conta"><strong><a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/CriarConta.html">Criar conta</a></strong></button>
+            <h3 id="frase-2">Nossas redes sociais</h3>
+            <div class="icons">
+                <span class="icon"><a href="https://pt-br.facebook.com/"><i class="bi bi-facebook"></i></a></span>
+                <span class="icon"><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></span>
+                <span class="icon"><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D"><i class="bi bi-twitter"></i></a></span>
+                <span class="icon"><a href="https://www.linkedin.com/login/pt"><i class="bi bi-linkedin"></i></a></span>
+            </div>
         </div>
-        <button id="cadastrar">Criar conta</button>
-        <div id="acesse">Acesse nossas redes sociais</div>
-        <a href="https://www.instagram.com/">
-        <img src="insta.webp" id="icone_insta">
-        </a>
-        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D">
-        <img src="TT.png" id="icone_tt">
-        </a>
-        <a href="https://br.linkedin.com/">
-        <img src="link.webp" id="icone_link">
-        </a>
-        <a href="https://pt-br.facebook.com/">
-        <img src="face.png" id="icone_face">
-        </a>
-        
-    </div>
-    <div id="div2">
-        <h1 id="criar">Entrar na conta</h1>
-        <input type="text" id="nomebox" placeholder="Nome">
-        <img src="usuario.png" id="usuario">
-        <input type="email" id="emailbox" placeholder="Email">
-        <img src="email.png" id="carta">
-        <input type="password" id="senhabox" placeholder="Senha">
-        <img src="cadeado.png" id="cadeado">
-        <div id="esqueceu">Esqueceu sua senha?</div>
-        <a href="" id="clique">Clique-aqui</a>
-        <button id="botaoE">Entrar</button>
-    </div>
+
+        <div class="qd-branco">
+            <h1 id="frase-entrar">Entre na sua conta</h1>
+            <div class="input-box">
+                <label for="firsTname">Nome completo</label>
+                <input id="firstname" type="text" name="firstname" placeholder="Digte seu nome completo" required>
+                <script src="https://unpkg.com/imask"></script>
+            </div>
+
+            <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Digte seu E-mail" autocomplete="email" minlength="10" maxlength="100" required>
+            </div>
+
+            <div class="input-box">
+                <label for="password">Senha</label>
+                <input id="password" type="password" name="password" placeholder="Digte sua senha" minlength="4" maxlength="15" required>
+                <img src="img/eye.svg" id="ver">
+            </div>
+
+            <div class="esq-senha">
+            <h2 id="frase-esqueceu">Esqueceu sua senha?</h2>
+            <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/EsqueceuSenha.html">Clique aqui</a>
+            </div>
+            <br>
+            <button class="bnt-entrar"><a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PgInicial.html">Entrar</a></button>
+
+        </div>
+    </div> 
+
+    <!-- Input name -->
+
+    <script>
+        var regExpMask = IMask(
+  document.getElementById('firstname'),
+  {
+    mask: /^[a-z+A-ZÁáÉéÍíÓóÚúÝýÂâÊêÎîÔôÛûÀàÈèÌìÒòÙùÃãÑñÕõÄäËëÏïÖöÜüŸÿ ]{0,100}$/
+  });
+    </script>
+
+     <!-- Input senha -->
+
+     <script>
+        const senha = document.querySelector('#password')
+        const ver = document.querySelector('#ver')
+
+        ver.onclick = () =>
+        {
+            if (senha.type === 'password') 
+            {
+                senha.type = 'text'
+                ver.src = 'img/eye-slash.svg'
+            }   
+            else
+            {
+                senha.type ='password'
+                ver.src = 'img/eye.svg'
+            }
+        }
+    </script>
+    
 </body>
 </html>
