@@ -13,7 +13,7 @@
 <body>
 
     <div class="cabecalho">
-        <img src="imagens/logo-nome.png" id="logo">
+        <img src="img/logo-nome.png" id="logo">
     </div>
 
     <nav class="menu-lateral">
@@ -24,29 +24,29 @@
 
         <ul>
 
-            <li class="item_menu">
-                <a href="#">
+            <li class="item_menu ativo">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Perfil.html">
                     <span class="icon"><i class="bi bi-person"></i></span>
                     <span class="txt-link">Perfil</span>
                 </a>
             </li>
 
-            <li class="item_menu ativo">
-                <a href="#">
+            <li class="item_menu">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PgInicial.html#">
                     <span class="icon"><i class="bi bi-house-door"></i></span>
                     <span class="txt-link">Inicial</span>
                 </a>
             </li>
 
             <li class="item_menu">
-                <a href="#">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Historico.html">
                     <span class="icon"><i class="bi bi-clock-history"></i></span>
                     <span class="txt-link">Histórico</span>
                 </a>
             </li>
 
             <li class="item_menu">
-                <a href="#">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Contato.html">
                     <span class="icon"><i class="bi bi-telephone"></i></span>
                     <span class="txt-link">Contato</span>
                 </a>
@@ -54,7 +54,7 @@
             </li>
 
             <li class="item_menu">
-                <a href="#">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Agendamentos.html">
                     <span class="icon"><i class="bi bi-calendar2-check"></i></span>
                     <span class="txt-link">Agendamentos</span>
                 </a>
@@ -68,24 +68,26 @@
         </div>
 
         <div class="inputg">
-            <label for="Nome">Nome completo</label>
-            <input type="text" placeholder="João Pedro Vassoler Michels" readonly>
+            <label for="Nome">Nome Completo</label>
+            <input class="inputs" type="text" value="João Pedro Vassoler Michels" readonly>
         </div>
 
         <div class="inputg">
             <label for="Nome">Email</label>
-            <input type="text" placeholder="joaovassoler@icloud.com" readonly>
+            <input class="inputs" type="text" value="joaovassoler@icloud.com" readonly>
         </div>
+        <div class="container">
+            <div class="inputg">
+                <label for="Nome">Residência</label>
+                <input class="inputs" type="text" value="Iririu, Amoeba 123 " readonly>
+            </div>
 
-        <div class="inputg">
-            <label for="Nome">Residência</label>
-            <input type="text" placeholder="Iririu, Amoeba 123 " readonly>
+            <div class="inputg">
+                <label for="Nome">Celular</label>
+                <input class="inputs" type="text" value="(47) 99912-4302" readonly>
+            </div>
         </div>
-
-        <div class="inputg">
-            <label for="Nome">Celular</label>
-            <input type="text" placeholder="(47) 99912-4302" readonly>
-        </div>
+        <!-- ----------------------------------INSERIR FOTO---------------------------------------------- -->
 
         <form action="#">
             <img src="imagens/inserir-foto.png" id="inserir-foto">
@@ -100,15 +102,10 @@
             </svg>
         </button>
 
-        <button class="cssbuttons-io-button"> Continuar
-            <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path fill="currentColor"
-                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
-                </svg>
-            </div>
-        </button>
+        
+            <button class="salvar"><b>Salvar</b></button>
+        
+        <!-- ---------------------------SCRIPT------------------------------- -->
 
         <script>
             const image = document.querySelector("#inserir-foto"),
@@ -117,6 +114,22 @@
             input.addEventListener("change", () => {
                 image.src = URL.createObjectURL(input.files[0]);
             });
+        </script>
+
+        <script>
+            // -----------------BOTÃO EDITAVEL-------------------
+
+
+
+            var botao = document.querySelector(".Btn");
+            var inputs = document.querySelectorAll(".inputs");
+
+            botao.addEventListener("click", function () {
+                for (var i = 0; i < inputs.length; i++) {
+                    inputs[i].removeAttribute("readonly");
+                }
+            });
+
         </script>
 
         <script src="menu.js"></script>
