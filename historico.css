@@ -137,8 +137,19 @@ ul li.item_menu a .icon>i {
     display: flex;
     position: absolute;
     top: 45%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
+}
+
+.fundo-btn {
+    display: flex;
+    background-color: #fff;
+    margin-top: 10%;
+    margin-left: 95%;
+    padding: 10px;
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
 }
 
 .mes-seta h1 {
@@ -147,9 +158,7 @@ ul li.item_menu a .icon>i {
 }
 
 .arrow-cima {
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 550px;
+    margin-left: 0px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -169,8 +178,7 @@ ul li.item_menu a .icon>i {
 }
 
 .arrow-baixo {
-    margin-top: 50px;
-    margin-left: 400px;
+    margin-left: 10px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
