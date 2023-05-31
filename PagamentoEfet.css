@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  /* margin: 0; */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #96d3e6;
+  font-family: 'Inter', sans-serif;
+}
+
+/* CABEÇALHO */
+
+.azul {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background-color: rgb(53, 158, 168);
+  z-index: 2;
+}
+
+.azul img {
+  display: block;
+  margin: auto;
+  margin-top: -15px;
+  width: 500px;
+}
+
+/* --------------------------PAI------------------- */
+
+.pai {
+  width: 70%;
+  height: 550px;
+  background-color: #fff;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.pai h2 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+.pai p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+/* --------------PARTE VERDE----------- */
+
+.part-green {
+  position: absolute;
+  top: 0;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(53, 158, 168);
+}
+
+.part-green h1 {
+  color: #fff;
+  font-size: 45px;
+  margin-top: 12px;
+  margin-left: -70px;
+}
+
+.part-green i {
+  color: rgb(33, 247, 33);
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 10px;
+  font-size: 60px;
+}
+
+/* ---------------------------BOTÃO STATUS---------------- */
+
+.status {
+  width: 250px;
+  height: 50px;
+  background-color: rgb(53, 158, 168);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 260px;
+  margin-top: 25px;
+}
+
+.status:hover {
+  background-color: rgba(53, 158, 168, 0.819);
+}
+
+
+.status a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* ---------------------------BOTÃO VOLTAR---------------- */
+
+.voltar {
+  width: 250px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 70px;
+}
+
+.voltar:hover {
+  background-color: #000000df;
+}
+
+
+.voltar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* ------------------VAN------------------- */
+
+.quadro-carro {
+  width: 100%;
+  height: 200px;
+  border-bottom: 15px solid #bdbdbd;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#b6deee, #e0f6ff);
+}
+
+.van {
+  position: absolute;
+  width: 200px;
+  bottom: -32%;
+  right: 100;
+  animation: van-animation 6s infinite linear;
+}
+
+@keyframes van-animation {
+  from {
+    right: 100%;
+  }
+
+  to {
+    right: -20%;
+  }
+}
+
+/* --------------------------- SOL E NUVEM-------------------- */
+
+.sol-nuvem {
+  position: absolute;
+  width: 190px;
+  right: 100;
+  animation: solnuvem-animation 12s infinite linear;
+}
+
+@keyframes solnuvem-animation {
+  from {
+    right: -20%;
+  }
+
+  to {
+    right: 100%;
+  }
+}
