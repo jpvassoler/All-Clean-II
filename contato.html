@@ -24,7 +24,7 @@
         <ul>
 
             <li class="item_menu">
-                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PgInicial.html#">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PaginaInicial.html">
                     <span class="icon"><i class="bi bi-house-door"></i></span>
                     <span class="txt-link">Inicial</span>
                 </a>
@@ -54,7 +54,7 @@
             </li>
 
             <li class="item_menu">
-                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Agendamentos.html">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Agendamento.html">
                     <span class="icon"><i class="bi bi-calendar2-check"></i></span>
                     <span class="txt-link">Agendamentos</span>
                 </a>
@@ -63,8 +63,6 @@
     </nav>
 
     <script src="menu.js"></script>
-
-
 
     <div class="pai">
         <div class="par">
@@ -93,17 +91,17 @@
 
             <div class="select-assunto">
                 <label for="assunto">Assunto da mensagem</label>
-                <select name="assunto" id="assunto">
+                <select name="assunto" id="assunto" onchange="mostrarInput()">
                     <option disabled selected>Selecione um opção</option>
                     <option value="op1">Problemas com sua conta</option>
                     <option value="op2">Atendimento</option>
-                    <option value="op3">Planos</option>
+                    <option value="op3">Kits</option>
                     <option value="op4">Dúvidas</option>
-                    <option value="op5" id="outro">Outro</option>
+                    <option value="op5">Outro</option>
                 </select>
 
                 <div class="input-assunto">
-                    <input id="inputass" type="text" placeholder="Digite o assunto" required>
+                    <input id="inputass" type="text" placeholder="Digite o assunto"  required>
                 </div>
 
             </div>
@@ -123,7 +121,8 @@
     </div>
 
     <script>
-       
+
+
     </script>
 
 </body>
