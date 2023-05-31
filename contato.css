@@ -6,8 +6,6 @@
 
 body {
     background: #96d3e6;
-
-    
     font-family: 'Inter', sans-serif;
 }
 
@@ -42,6 +40,7 @@ body {
     left: 0;
     overflow: hidden;
     transition: .4s;
+    z-index: 2;
 }
 
 .menu-lateral.expandir {
@@ -102,8 +101,6 @@ ul li.item_menu a .icon>i {
     font-size: 30px;
     margin-left: 10px;
 }
-
-/* FIM MENU LATERAL  */
 
 /* Resto do site */
 
@@ -248,6 +245,7 @@ h1 {
 
 .mostra-input {
     width: 180px !important;
+    
 }
 
 .input-assunto  input:hover {
@@ -306,7 +304,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: fixed;
     width: 60%;
     border-radius: 36px;
     font-weight: 700;
@@ -322,7 +320,7 @@ h1 {
     transition: all .25s ease-in-out;
     z-index: 1;
     border: none;
-    margin-top: 65px;
+    margin-top: 60px;
     margin-left: 190px;
     cursor: pointer;
 }
