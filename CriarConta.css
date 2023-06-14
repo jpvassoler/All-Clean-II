@@ -16,6 +16,8 @@ body {
     background-color: #96d3e6;
 }
 
+/* --------------------------CONTAINER IMAGEM---------------------- */
+
 .container {
     width: 80%;
     height: 80vh;
@@ -37,6 +39,8 @@ body {
     width: 31rem;
 }
 
+/* --------------------------FORM---------------------- */
+
 .form {
     width: 50%;
     display: flex;
@@ -54,6 +58,8 @@ body {
     justify-content: space-between;
 }
 
+/* --------------------------LOGIN BOTÃO---------------------- */
+
 .login-button {
     display: flex;
     align-items: center;
@@ -69,7 +75,7 @@ body {
 }
 
 .login-button button:hover {
-    background-color:rgba(53, 158, 168, 0.634);
+    background-color: rgba(53, 158, 168, 0.634);
 }
 
 .login-button button a {
@@ -83,11 +89,13 @@ body {
     display: block;
     width: 5rem;
     height: 0.3rem;
-    background-color:rgb(53, 158, 168);
+    background-color: rgb(53, 158, 168);
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
 }
+
+/* --------------------------INPUTS--------------------- */
 
 .input-group {
     display: flex;
@@ -128,18 +136,20 @@ body {
     color: #000000be;
 }
 
+/* --------------------------CRIAR BOTÃO---------------------- */
+
 .criar-button button {
     width: 100%;
     margin-top: 2.0rem;
     border: none;
-    background-color:rgb(53, 158, 168);
+    background-color: rgb(53, 158, 168);
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .criar-button button:hover {
-    background-color:rgba(53, 158, 168, 0.634);
+    background-color: rgba(53, 158, 168, 0.634);
 }
 
 .criar-button button a {
@@ -149,12 +159,16 @@ body {
     color: #fff;
 }
 
+/* --------------------------POSSUI CONTA ?---------------------- */
+
 #ja {
     position: absolute;
     margin-left: 21%;
     margin-top: 10px;
     color: #000000;
 }
+
+/* --------------------------CHECK---------------------- */
 
 .checkmark {
     display: block;
@@ -191,6 +205,8 @@ body {
     transform: translate(-50%, -50%) rotateZ(40deg) scale(1);
 }
 
+/* --------------------------TERMOS E CONDIÇÕES---------------------- */
+
 #eu-li {
     position: absolute;
     margin-left: 30px;
@@ -198,42 +214,16 @@ body {
     font-size: 15px;
 }
 
-#span:hover{
+#span:hover {
     cursor: pointer;
     color: #000000c3;
 }
 
 .checkbox-wrapper span {
-    color: rgb(53, 158, 168);;
+    color: rgb(53, 158, 168);
+    ;
     cursor: pointer;
 }
-
-#ver {
-    position: absolute;
-    width: 30px;
-    margin-left: 180px;
-    margin-top: 30px;
-    cursor: pointer;
-}
-
-#ver1 {
-    position: absolute;
-    width: 30px;
-    margin-left: 180px;
-    margin-top: 30px;
-    cursor: pointer;
-}
-
-.branco {
-    width: 70%;
-    height: 420px;
-    background-color: #fff;
-    margin-top: 100px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
-    border-radius: 0 0 10px 10px;
-}
-
-
 
 #tm {
     position: absolute;
@@ -242,34 +232,6 @@ body {
     font-size: 40px;
     color: #fff;
 }
-
-.branco .azul i {
-    position: absolute;
-    color: #fff;
-    font-size: 40px;
-    cursor: pointer;
-    margin-left: 30px;
-    margin-top: 25px;
-}
-
-.branco .azul i:hover {
-    color: #ffffffc8;
-}
-
-.branco .azul p {
-    color: #fff;
-    font-size: 20px;
-    margin-left: 100px;
-}
-
-#tmt {
-    padding: 20px;
-    font-size: 17px;
-    text-align: justify;
-    justify-content: center;
-}
-
-/* ----------------TERMOS E CONDIÇÕES------------------ */
 
 .termos {
     position: absolute;
@@ -316,7 +278,62 @@ body {
     padding: 10px;
 }
 
-.mostrar-termos{
+.mostrar-termos {
     width: 600px !important;
     height: 300px !important;
+}
+
+.branco {
+    width: 70%;
+    height: 420px;
+    background-color: #fff;
+    margin-top: 100px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+.branco .azul i {
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.branco .azul i:hover {
+    color: #ffffffc8;
+}
+
+.branco .azul p {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+#tmt {
+    padding: 20px;
+    font-size: 17px;
+    text-align: justify;
+    justify-content: center;
+}
+
+/* --------------------------VER---------------------- */
+
+#ver {
+    position: absolute;
+    width: 30px;
+    margin-left: 180px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#ver1 {
+    position: absolute;
+    width: 30px;
+    margin-left: 180px;
+    margin-top: 30px;
+    cursor: pointer;
 }

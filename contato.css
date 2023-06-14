@@ -9,7 +9,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-/* CABEÇALHO */
+/* ---------------CABEÇALHO------------------ */
 
 .azul {
     position: fixed;
@@ -27,7 +27,7 @@ body {
     width: 500px;
 }
 
-/* MENU LATERAL  */
+/* ---------------MENU LATERAL------------------ */
 
 .menu-lateral {
     width: 80px;
@@ -80,10 +80,10 @@ ul li.item_menu a {
     color: azure;
     text-decoration: none;
     font-size: 20px;
-    padding: 20px 4%;
+    padding: 15px 4%;
     display: flex;
-    margin-bottom: 25px;
-    line-height: 40px;
+    margin-bottom: 26px;
+    line-height: 35px;
 }
 
 ul li.item_menu a .txt-link {
@@ -102,7 +102,8 @@ ul li.item_menu a .icon>i {
     margin-left: 10px;
 }
 
-/* Resto do site */
+
+/* ----------------------TITLE------------------- */
 
 h1 {
     text-align: center;
@@ -120,6 +121,8 @@ h1 {
     margin-top: 90px;
 }
 
+
+/* ---------------------------------DIV---------------------- */
 
 .pai {
     position: absolute;
@@ -143,6 +146,7 @@ h1 {
     border-radius: 10px 10px 0 0;
 }
 
+/* -----------------------------INPUT-------------------- */
 
 .input-group {
     display: block;
@@ -186,13 +190,13 @@ h1 {
     color: #000000be;
 }
 
-/* --------------------------------------INPUT ASSUNTO-------------------------- */
+/* --------------------------------------SELECT ASSUNTO-------------------------- */
 
 .select-assunto {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
-    margin-top: -120px;
+    margin-top: -90px;
 }
 
 .select-assunto select {
@@ -204,7 +208,7 @@ h1 {
     box-shadow: 1px 1px 6px #00001c;
 }
 
-.select-assunto  select:hover {
+.select-assunto select:hover {
     background-color: #f9f8f8ff;
 }
 
@@ -225,13 +229,12 @@ h1 {
 /* ----------------------INPUT ASSUNTO---------------------- */
 
 .input-assunto {
+    position: absolute;
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
-    margin-top: -60px;
+    margin-top: 15px;
     margin-left: 240px;
-    height: 0;
-    overflow: hidden;
 }
 
 .input-assunto input {
@@ -245,10 +248,10 @@ h1 {
 
 .mostra-input {
     width: 180px !important;
-    
+
 }
 
-.input-assunto  input:hover {
+.input-assunto input:hover {
     background-color: #f9f8f8ff;
 }
 
@@ -260,7 +263,7 @@ h1 {
     color: #000000be;
 }
 
-/* MENSAGEM */
+/*-----------------MENSAGEM---------------- */
 
 .input-msg {
     margin-left: 480px;
@@ -297,6 +300,7 @@ h1 {
 
 #msg {
     resize: none;
+    height: 250px;
 }
 
 
@@ -320,7 +324,7 @@ h1 {
     transition: all .25s ease-in-out;
     z-index: 1;
     border: none;
-    margin-top: 60px;
+    margin-top: -5px;
     margin-left: 190px;
     cursor: pointer;
 }
@@ -337,7 +341,6 @@ h1 {
     z-index: 2;
 }
 
-/* change the width and height to 100% when you use it in your layout */
 .button::after {
     content: '';
     position: absolute;
@@ -379,3 +382,5 @@ h2 {
     margin-top: -200px;
     margin-left: 180px;
 }
+
+

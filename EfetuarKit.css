@@ -9,7 +9,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-/* CABEÇALHO */
+/* -------------CABEÇALHO------------ */
 
 .azul {
     position: fixed;
@@ -28,7 +28,7 @@ body {
     width: 500px;
 }
 
-/* MENU LATERAL  */
+/* -------------MENU LATERAL----------- */
 
 .menu-lateral {
     width: 80px;
@@ -124,7 +124,7 @@ ul li.item_menu a .icon>i {
     margin-top: 5%;
     width: 30%;
     height: 15%;
-    background-color: rgba(53, 158, 168, 0.719);
+    background-color:  rgba(53, 158, 168, 0.638);
     border-radius: 10px;
 }
 
@@ -140,7 +140,7 @@ ul li.item_menu a .icon>i {
     margin-left: 5%;
     width: 50%;
     height: 50%;
-    background-color: #ffffffac;
+    background-color: #fff;
     border-radius: 10px;
 }
 
@@ -505,7 +505,6 @@ option {
     margin-top: -90px;
 }
 
-/*--------------------------------------------------------------- FIM INPUT CARDS------------------------------------------  */
 
 /*-------------------------------------- BOTÕES CARD -------------------------- */
 
@@ -553,9 +552,6 @@ option {
     font-size: 15px;
 }
 
-/*-------------------------------------- FIM BOTÕES CARD ------------------------------- */
-
-
 /*------------------------------------- DIV PIX--------------------------------------- */
 
 .div-pix {
@@ -588,8 +584,6 @@ option {
     font-size: 120px;
     margin-left: 30px;
 }
-
-/*------------------------------------- DIV PIX--------------------------------------- */
 
 /*------------------------------------- INPUT PIX--------------------------------------- */
 
@@ -740,52 +734,6 @@ option {
     padding: 20px;
 }
 
-/* ------------------------------ CHECK CIENTE ------------------------------  */
-
-/* .checkmark {
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-color: #909090;
-    border-radius: 10px;
-    position: relative;
-    transition: background-color 0.4s;
-    overflow: hidden;
-    cursor: pointer;
-    margin-left: 250px;
-    margin-top: -20px;
-}
-
-#check:checked~.checkmark {
-    background-color: #08bb68;
-}
-
-.checkmark::after {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 10px;
-    border-right: 3px solid #fff;
-    border-bottom: 3px solid #fff;
-    top: 44%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateZ(40deg) scale(10);
-    opacity: 0;
-    transition: all 0.4s;
-}
-
-#check:checked~.checkmark::after {
-    opacity: 1;
-    transform: translate(-50%, -50%) rotateZ(40deg) scale(1);
-}
-
-#eu-li {
-    position: absolute;
-    margin-left: 270px;
-    margin-top: -10px;
-    font-size: 15px;
-} */
-
 
 /* ------------------------------------ TROCO -------------------------------------- */
 
@@ -911,7 +859,7 @@ option {
 }
 
 
-/* ------- MUDA COR E MOSTRAR ------- */
+/* ----------------- MUDA COR E MOSTRAR ------------- */
 
 .cor-card {
     background: #ffffff !important;

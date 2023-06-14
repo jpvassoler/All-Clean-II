@@ -11,9 +11,14 @@
 </head>
 
 <body>
+
+    <!-- ------------------CABEÇALHO----------------- -->
+
     <div class="azul">
-        <img src="img/logo-nome.png" alt="">
+        <img src="imagens/logo-nome.png" alt="">
     </div>
+
+    <!-- -------------------MENU LATERAL------------------ -->
 
     <nav class="menu-lateral">
 
@@ -71,11 +76,11 @@
             <h1>Valor</h1>
 
             <div class="valor-kit">
-                <p>R$120,00</p>
+                <p>R$100,00</p>
             </div>
         </div>
         <h1 class="type-kit">Kit avançado</h1>
-        <h2 class="informe">Informe a data e horário</h2>
+        <h2 class="informe">Informe a data e horário de seu primeiro agendamento</h2>
         <input type="text" name="data" id="data" placeholder="00/00">
 
         <p id="aviso">Lembre-se de sempre estar em casa no horário e dia marcado.<br> Não será disponibilizado
@@ -185,41 +190,42 @@
 
     <h1 class="forma-pa">Selecione a forma de pagamento</h1>
 
-        <!-- -----------------------------FORMA PAGAMENTO----------------------------- -->
 
-        <div class="forma-pagamento">
+    <!-- -----------------------------FORMA PAGAMENTO----------------------------- -->
 
-            <div class="card-span">
-                <div class="card"><i style="color: rgb(222, 28, 28);" class="bi bi-credit-card"></i><br>
-                    <span>
-                        <p>Cartão de crédito</p>
-                    </span>
-                </div>
+    <div class="forma-pagamento">
+
+        <div class="card-span">
+            <div class="card"><i style="color: rgb(222, 28, 28);" class="bi bi-credit-card"></i><br>
+                <span>
+                    <p>Cartão de crédito</p>
+                </span>
             </div>
-
-            <div class="pix-span">
-                <div class="card1"><i style="color: rgb(255, 119, 0);" class="bi bi-wallet2"></i><br>
-                    <span>
-                        <p>Pix</p>
-                    </span>
-
-                </div>
-            </div>
-
-            <div class="dinheiro-span">
-                <div class="card2"><i style="color: green;" class="bi bi-cash-stack"></i><br>
-                    <span>
-                        <p>Dinheiro</p>
-                    </span>
-                </div>
-            </div>
-
         </div>
-    
 
-    <!------------------------------------------------------->
+        <div class="pix-span">
+            <div class="card1"><i style="color: rgb(255, 119, 0);" class="bi bi-wallet2"></i><br>
+                <span>
+                    <p>Pix</p>
+                </span>
 
-<div class="div-card">
+            </div>
+        </div>
+
+        <div class="dinheiro-span">
+            <div class="card2"><i style="color: green;" class="bi bi-cash-stack"></i><br>
+                <span>
+                    <p>Dinheiro</p>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!----------------------DIV CARD--------------------------------->
+
+    <div class="div-card">
 
         <div id="b1"></div>
         <div id="b2"></div>
@@ -289,12 +295,14 @@
 
         </div>
 
-        <button id="btn-troca"><a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PagamentoEfet.html">Confirmar pagamento</button></a>
+        <button id="btn-troca"><a
+                href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PagamentoEfet.html">Confirmar
+                pagamento</button></a>
         <button id="btn-confirm"><a href="">Trocar kit</button></a>
 
     </div>
 
-    <!-- --------------------------------------------------------------------------- -->
+    <!-- ------------------------------------DIV PIX--------------------------------------- -->
 
     <div class="div-pix">
         <div id="b3"></div>
@@ -310,7 +318,9 @@
                 <i class="bi bi-clipboard"></i>
             </button>
         </div>
-        <button id="confirmar-pix"><a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PagamentoEfet.html">Confirmar pagamento</a></button>
+        <button id="confirmar-pix"><a
+                href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PagamentoEfet.html">Confirmar
+                pagamento</a></button>
         <button id="trocar-pix"><a href="#">Trocar kit</a></button>
     </div>
 
@@ -319,14 +329,6 @@
     <div class="div-dinheiro">
         <h1>O valor deve ser entregue antes do serviço</h1>
         <p>Para darmos continuidade preencha as informções abaixo e confirme</p>
-        <!-- <div class="check-ciente">
-            <label class="checkbox-wrapper">
-                <input type="checkbox" id="check" hidden="" required>
-                <h1 id="eu-li">Eu concordo e estou ciente a respeito</h1></input>
-                <label for="check" class="checkmark"></label>
-            </label>
-        </div> -->
-
         <div class="input-troco">
             <label for="troco">Precisa de Troco?</label>
             <div class="opcao">
@@ -345,7 +347,9 @@
         <div id="b7"></div>
         <div id="b8"></div>
 
-        <button id="confirmar-dinheiro"><a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PagamentoEfet.html">Confirmar informações</a></button>
+        <button id="confirmar-dinheiro"><a
+                href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PagamentoEfet.html">Confirmar
+                informações</a></button>
         <button id="trocar-dinheiro"><a href="#">Trocar kit</a></button>
     </div>
 
@@ -362,139 +366,141 @@
         $('#data').mask('00/00');
     </script>
 
-<script>
+    <script>
 
-    //CARD
+        //CARD
 
-    var span_card = document.querySelector('.card-span');
+        var span_card = document.querySelector('.card-span');
 
-    span_card.addEventListener('click', function () {
-        var conteudo_card = document.querySelector('.div-card');
-        var conteudo_pix = document.querySelector('.div-pix');
-        var conteudo_din = document.querySelector('.div-dinheiro');
+        span_card.addEventListener('click', function () {
+            var conteudo_card = document.querySelector('.div-card');
+            var conteudo_pix = document.querySelector('.div-pix');
+            var conteudo_din = document.querySelector('.div-dinheiro');
 
-        if (conteudo_card.classList.contains('mostrar')) {
-            //span.innerHTML = "Cartão de crédito"
-            conteudo_card.classList.remove('mostrar')
-        } else {
-            //span.innerHTML = "Cartão de crédito"
-            conteudo_pix.classList.remove('mostrar')
-            conteudo_din.classList.remove('mostrar')
-            conteudo_card.classList.add('mostrar')
-        }
-    })
+            if (conteudo_card.classList.contains('mostrar')) {
+                //span.innerHTML = "Cartão de crédito"
+                conteudo_card.classList.remove('mostrar')
+            } else {
+                //span.innerHTML = "Cartão de crédito"
+                conteudo_pix.classList.remove('mostrar')
+                conteudo_din.classList.remove('mostrar')
+                conteudo_card.classList.add('mostrar')
+            }
+        })
 
-    var cor_card = document.querySelector('.card-span')
+        var cor_card = document.querySelector('.card-span')
 
-    cor_card.addEventListener('click', function () {
-        var card_cor = document.querySelector('.card');
-        var pix_cor = document.querySelector('.card1');
-        var din_cor = document.querySelector('.card2');
+        cor_card.addEventListener('click', function () {
+            var card_cor = document.querySelector('.card');
+            var pix_cor = document.querySelector('.card1');
+            var din_cor = document.querySelector('.card2');
 
-        if (card_cor.classList.contains('cor-card')) {
+            if (card_cor.classList.contains('cor-card')) {
 
-            card_cor.classList.remove('cor-card')
+                card_cor.classList.remove('cor-card')
 
-        } else {
-            pix_cor.classList.remove('cor-card')
-            din_cor.classList.remove('cor-card')
-            card_cor.classList.add('cor-card')
+            } else {
+                pix_cor.classList.remove('cor-card')
+                din_cor.classList.remove('cor-card')
+                card_cor.classList.add('cor-card')
 
-        }
-    })
+            }
+        })
 
 
-    //PIX
+        //PIX
 
-    var span_pix = document.querySelector('.pix-span');
+        var span_pix = document.querySelector('.pix-span');
 
-    span_pix.addEventListener('click', function () {
-        var conteudo_card = document.querySelector('.div-card');
-        var conteudo_pix = document.querySelector('.div-pix');
-        var conteudo_din = document.querySelector('.div-dinheiro');
+        span_pix.addEventListener('click', function () {
+            var conteudo_card = document.querySelector('.div-card');
+            var conteudo_pix = document.querySelector('.div-pix');
+            var conteudo_din = document.querySelector('.div-dinheiro');
 
-        if (conteudo_pix.classList.contains('mostrar')) {
-            //span.innerHTML = "Pix"
-            conteudo_pix.classList.remove('mostrar')
-        } else {
-            //span.innerHTML = "Pix"
-            conteudo_card.classList.remove('mostrar')
-            conteudo_din.classList.remove('mostrar')
-            conteudo_pix.classList.add('mostrar')
-        }
-    })
+            if (conteudo_pix.classList.contains('mostrar')) {
+                //span.innerHTML = "Pix"
+                conteudo_pix.classList.remove('mostrar')
+            } else {
+                //span.innerHTML = "Pix"
+                conteudo_card.classList.remove('mostrar')
+                conteudo_din.classList.remove('mostrar')
+                conteudo_pix.classList.add('mostrar')
+            }
+        })
 
-    var cor_pix = document.querySelector('.pix-span')
+        var cor_pix = document.querySelector('.pix-span')
 
-    cor_pix.addEventListener('click', function () {
-        var card_cor = document.querySelector('.card');
-        var pix_cor = document.querySelector('.card1');
-        var din_cor = document.querySelector('.card2');
+        cor_pix.addEventListener('click', function () {
+            var card_cor = document.querySelector('.card');
+            var pix_cor = document.querySelector('.card1');
+            var din_cor = document.querySelector('.card2');
 
-        if (pix_cor .classList.contains('cor-card')) {
+            if (pix_cor.classList.contains('cor-card')) {
 
-            pix_cor .classList.remove('cor-card')
+                pix_cor.classList.remove('cor-card')
 
-        } else {
-            card_cor.classList.remove('cor-card')
-            din_cor.classList.remove('cor-card')
-            pix_cor .classList.add('cor-card')
+            } else {
+                card_cor.classList.remove('cor-card')
+                din_cor.classList.remove('cor-card')
+                pix_cor.classList.add('cor-card')
 
-        }
-    })
+            }
+        })
 
-    //DINHEIRO
+        //DINHEIRO
 
-    var span_din = document.querySelector('.dinheiro-span');
-    span_din.addEventListener('click', function () {
-        var conteudo_card = document.querySelector('.div-card');
-        var conteudo_pix = document.querySelector('.div-pix');
-        var conteudo_din = document.querySelector('.div-dinheiro');
+        var span_din = document.querySelector('.dinheiro-span');
+        span_din.addEventListener('click', function () {
+            var conteudo_card = document.querySelector('.div-card');
+            var conteudo_pix = document.querySelector('.div-pix');
+            var conteudo_din = document.querySelector('.div-dinheiro');
 
-        if (conteudo_din.classList.contains('mostrar')) {
-            //span.innerHTML = "Cartão de crédito ou débito"
-            conteudo_din.classList.remove('mostrar')
-        } else {
-            //span.innerHTML = "Cartão de crédito ou débito"
-            conteudo_card.classList.remove('mostrar')
-            conteudo_pix.classList.remove('mostrar')
-            conteudo_din.classList.add('mostrar')
+            if (conteudo_din.classList.contains('mostrar')) {
+                //span.innerHTML = "Cartão de crédito ou débito"
+                conteudo_din.classList.remove('mostrar')
+            } else {
+                //span.innerHTML = "Cartão de crédito ou débito"
+                conteudo_card.classList.remove('mostrar')
+                conteudo_pix.classList.remove('mostrar')
+                conteudo_din.classList.add('mostrar')
 
-        }
-    })
+            }
+        })
 
-    var cor_din = document.querySelector('.dinheiro-span')
+        var cor_din = document.querySelector('.dinheiro-span')
 
-    cor_din.addEventListener('click', function () {
-        var card_cor = document.querySelector('.card');
-        var pix_cor = document.querySelector('.card1');
-        var din_cor = document.querySelector('.card2');
+        cor_din.addEventListener('click', function () {
+            var card_cor = document.querySelector('.card');
+            var pix_cor = document.querySelector('.card1');
+            var din_cor = document.querySelector('.card2');
 
-        if (din_cor.classList.contains('cor-card')) {
+            if (din_cor.classList.contains('cor-card')) {
 
-            din_cor.classList.remove('cor-card')
+                din_cor.classList.remove('cor-card')
 
-        } else {
-            card_cor.classList.remove('cor-card')
-            pix_cor.classList.remove('cor-card')
-            din_cor.classList.add('cor-card')
+            } else {
+                card_cor.classList.remove('cor-card')
+                pix_cor.classList.remove('cor-card')
+                din_cor.classList.add('cor-card')
 
-        }
-    })
+            }
+        })
 
-    const input = document.getElementById("meuInput");
-    const botaoCopiar = document.getElementById("botaoCopiar");
+        const input = document.getElementById("meuInput");
+        const botaoCopiar = document.getElementById("botaoCopiar");
 
-    botaoCopiar.addEventListener("click", function () {
-        input.select();
-        input.setSelectionRange(0, input.value.length);
-        document.execCommand("copy");
-    });
-</script>
+        botaoCopiar.addEventListener("click", function () {
+            input.select();
+            input.setSelectionRange(0, input.value.length);
+            document.execCommand("copy");
+        });
+    </script>
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-<script> $('#input-valor-troco').mask('R$00,00');</script>
+    <!-- MASK DINHEIRO -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script> $('#input-valor-troco').mask('R$00,00');</script>
 
 </body>
 

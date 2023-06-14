@@ -11,7 +11,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-/* CABEÇALHO */
+/*--------- CABEÇALHO-------------- */
 
 .azul {
     position: fixed;
@@ -28,22 +28,23 @@ body {
     margin: auto;
     margin-top: -15px;
     width: 500px;
+    margin-left: 518px;
 }
 
-/* MENU LATERAL  */
+/*--------------- MENU LATERAL------------------- */
 
 .menu-lateral {
     width: 80px;
     height: 100%;
     background-color: rgb(0, 0, 0);
     padding: 40px 0 40px 1%;
-    box-shadow: 5px 0 0 #fff;
+    box-shadow: 5px 0 0 rgb(255, 255, 255);
     position: fixed;
     top: 0;
     left: 0;
     overflow: hidden;
     transition: .4s;
-    z-index: 3;
+    z-index: 2;
 }
 
 .menu-lateral.expandir {
@@ -83,10 +84,10 @@ ul li.item_menu a {
     color: azure;
     text-decoration: none;
     font-size: 20px;
-    padding: 20px 4%;
+    padding: 15px 4%;
     display: flex;
     margin-bottom: 25px;
-    line-height: 40px;
+    line-height: 35px;
 }
 
 ul li.item_menu a .txt-link {
@@ -105,7 +106,6 @@ ul li.item_menu a .icon>i {
     margin-left: 10px;
 }
 
-/* FIM MENU LATERAL  */
 
 /* -------------------TEXT-------------- */
 
@@ -128,8 +128,6 @@ ul li.item_menu a .icon>i {
     text-align: center;
     margin-top: -20px;
 }
-
-/* ------------------- FIM TEXT-------------- */
 
 /* -------------------MÊS E SETA-------------- */
 
@@ -199,8 +197,6 @@ ul li.item_menu a .icon>i {
     
 }
 
-/* -------------------FIM MÊS E SETA-------------- */
-
 /* -------------------LINHA E AGENDA-------------- */
 
 .linha {
@@ -220,8 +216,6 @@ ul li.item_menu a .icon>i {
     transform: rotate(270deg);
     font-size: 35px;
 }
-
-/* -------------------FIM LINHA E AGENDA-------------- */
 
 /* -------------------HISTORICO JANEIRO-------------- */
 

@@ -11,9 +11,14 @@
 </head>
 
 <body>
+
+<!-- -------------------CABEÇALHO------------ -->
+    
     <div class="azul">
-        <img src="img/logo-nome.png" alt="">
+        <img src="imagens/logo-nome.png" alt="">
     </div>
+
+<!-- ------------------MENU LATERAL-------------- -->
 
     <nav class="menu-lateral">
 
@@ -40,14 +45,14 @@
 
             <li class="item_menu">
                 <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Historico.html">
-                    <span class="icon"><i class="bi bi-clock-history"></i></span>
+                    <span class="icon"><i class="bi bi-clock"></i></span>
                     <span class="txt-link">Histórico</span>
                 </a>
             </li>
 
             <li class="item_menu ativo">
                 <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Contato.html">
-                    <span class="icon"><i class="bi bi-telephone"></i></span>
+                    <span class="icon"><i class="bi bi-chat"></i></span>
                     <span class="txt-link">Contato</span>
                 </a>
 
@@ -55,20 +60,34 @@
 
             <li class="item_menu">
                 <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Agendamento.html">
-                    <span class="icon"><i class="bi bi-calendar2-check"></i></span>
-                    <span class="txt-link">Agendamentos</span>
+                    <span class="icon"><i class="bi bi-calendar-week"></i></span>
+                    <span class="txt-link">Agendar</span>
                 </a>
             </li>
+
+            <li class="item_menu">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Status.html">
+                    <span class="icon"><i class="bi bi-pin-angle"></i></span>
+                    <span class="txt-link">Status</span>
+                </a>
+            </li>
+
         </ul>
     </nav>
 
+
     <script src="menu.js"></script>
+
+    <!-- ------------------------TITULO--------------- -->
 
     <div class="pai">
         <div class="par">
             <h1>Estamos prontos para ajudar você</h1>
         </div>
         <p>Preencha as informações abaixo e envie para que sua mensagem seja encaminhada</p>
+
+<!-- ------------------------------INPUTS------------------- -->
+        
         <div class="input-group">
             <div class="input-box">
                 <label for="firsTname">Nome completo</label>
@@ -101,32 +120,37 @@
                 </select>
 
                 <div class="input-assunto">
-                    <input id="inputass" type="text" placeholder="Digite o assunto"  required>
+                    <input id="inputass" type="text" placeholder="Digite o assunto" style="display: none;" required>
                 </div>
 
             </div>
         </div>
 
+<!-- ------------------------------BOTÃO------------------- -->
+
         <button class="button">
             <span class="text">Enviar mensagem</span>
-            <span class="iconb"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" data-icon="paper-plane"
-                    width="20px" aria-hidden="true">
+            <span class="iconb"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" data-icon="paper-plane" width="20px" aria-hidden="true">
                     <path
-                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
-                        fill="currentColor"></path>
+                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z" fill="currentColor"></path>
                 </svg></span>
         </button>
-
-
     </div>
 
+<!-- ------------------------------APARECER INPUT------------------- -->
+
     <script>
+        function mostrarInput() {
+            var select = document.getElementById("assunto");
+            var input = document.getElementById("inputass");
 
-
+            if (select.value === "op5") {
+                input.style.display = "block";
+            } else {
+                input.style.display = "none";
+            }
+        }
     </script>
 
 </body>
-
-
-
 </html>

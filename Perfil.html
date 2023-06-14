@@ -12,9 +12,13 @@
 
 <body>
 
-    <div class="cabecalho">
-        <img src="img/logo-nome.png" id="logo">
+ <!-- ------------------CABEÇALHO---------------->
+
+    <div class="azul">
+        <img src="imagens/logo-nome.png" alt="">
     </div>
+
+  <!-- --------------------MENU LATERAL----------------   -->
 
     <nav class="menu-lateral">
 
@@ -24,6 +28,13 @@
 
         <ul>
 
+            <li class="item_menu">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PaginaInicial.html">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Inicial</span>
+                </a>
+            </li>
+
             <li class="item_menu ativo">
                 <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Perfil.html">
                     <span class="icon"><i class="bi bi-person"></i></span>
@@ -31,41 +42,49 @@
                 </a>
             </li>
 
-            <li class="item_menu">
-                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/PgInicial.html#">
-                    <span class="icon"><i class="bi bi-house-door"></i></span>
-                    <span class="txt-link">Inicial</span>
-                </a>
-            </li>
 
             <li class="item_menu">
                 <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Historico.html">
-                    <span class="icon"><i class="bi bi-clock-history"></i></span>
+                    <span class="icon"><i class="bi bi-clock"></i></span>
                     <span class="txt-link">Histórico</span>
                 </a>
             </li>
 
             <li class="item_menu">
                 <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Contato.html">
-                    <span class="icon"><i class="bi bi-telephone"></i></span>
+                    <span class="icon"><i class="bi bi-chat"></i></span>
                     <span class="txt-link">Contato</span>
                 </a>
 
             </li>
 
             <li class="item_menu">
-                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Agendamentos.html">
-                    <span class="icon"><i class="bi bi-calendar2-check"></i></span>
-                    <span class="txt-link">Agendamentos</span>
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Agendamento.html">
+                    <span class="icon"><i class="bi bi-calendar-week"></i></span>
+                    <span class="txt-link">Agendar</span>
                 </a>
             </li>
+
+            <li class="item_menu">
+                <a href="file:///C:/Users/Jo%C3%A3o%20Pedro/OneDrive/Documentos/All%20Clean%20II/Status.html">
+                    <span class="icon"><i class="bi bi-pin-angle"></i></span>
+                    <span class="txt-link">Status</span>
+                </a>
+            </li>
+
         </ul>
     </nav>
+
+    <script src="menu.js"></script>
+
+<!-- -----------------------TITLE-------------------------- -->
 
     <div class="perfil">
         <div class="ddp">
             <h1>Dados de Perfil</h1>
         </div>
+
+<!-- --------------------------INPUTS-------------------- -->
 
         <div class="inputg">
             <label for="Nome">Nome Completo</label>
@@ -104,7 +123,7 @@
 
         
             <button class="salvar"><b>Salvar</b></button>
-        
+    </div>    
         <!-- ---------------------------SCRIPT------------------------------- -->
 
         <script>
@@ -116,11 +135,11 @@
             });
         </script>
 
+        
+            <!-- // -----------------BOTÃO EDITAVEL------------------- -->
+
+
         <script>
-            // -----------------BOTÃO EDITAVEL-------------------
-
-
-
             var botao = document.querySelector(".Btn");
             var inputs = document.querySelectorAll(".inputs");
 
@@ -131,8 +150,8 @@
             });
 
         </script>
-
-        <script src="menu.js"></script>
+    
+        
 
 </body>
 

@@ -170,14 +170,14 @@ ul li.item_menu a .icon>i {
 
 .card .proximo, .voltar{
     position: fixed;
-    width: 4.5%;
-    height: 9%;
+    width: 4%;
+    height: 8%;
     border-radius: 100%;
     cursor: pointer;
     border: none;
     background-color: transparent;
     margin-left: 34%;
-    margin-top: -9%;
+    margin-top: -8%;
 }
 
 .card .voltar {
@@ -187,12 +187,15 @@ ul li.item_menu a .icon>i {
 
 .card .proximo:hover, .voltar:hover {
     background-color: #03030376;
+}
+
+.card .proximo i:hover, .voltar i:hover {
     color: #fff;
 }
 
 .card .proximo i, .voltar i {
     color: black;
-    font-size: 40px;
+    font-size: 45px;
     margin-left: 8px;
 }
 
@@ -202,9 +205,6 @@ ul li.item_menu a .icon>i {
 
 }
 
-.card .proximo i:hover, .voltar i:hover {
-    color: #fff;
-}
 
 /* -----------------------------SELECT-------------------- */
 
@@ -275,7 +275,7 @@ ul li.item_menu a .icon>i {
 }
 
 .lavagens i, .validade i {
-    color: #fff;
+    color: #000;
     font-size: 40px;
 }
 
@@ -284,24 +284,24 @@ ul li.item_menu a .icon>i {
 .lavagens p, .validade p {
     font-size: 30px;
     margin-top: 12px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 /* ----------------------------AVISO---------------------- */
 
 .aviso {
-    border: 1px solid black;
+    border: 5px solid black;
     width: 35%;
     margin-left: 10%;
     padding: 10px;
-    text-align: center;
+    text-align: justify;
 }
 
 /* ---------------------------SALVAR------------------------- */
 
 .salvar {
-    margin-left: 56%;
-    margin-top: -16%
+    margin-left: 58%;
+    margin-top: -12%
 }
 
 .salvar button {
@@ -318,4 +318,5 @@ ul li.item_menu a .icon>i {
 
 .salvar button:hover {
     background-color: rgba(53, 158, 168, 0.397);
+    transition: 1s;
 }

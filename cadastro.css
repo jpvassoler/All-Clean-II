@@ -17,7 +17,7 @@ body {
 
 }
 
-/* DIV AZUL */
+/* <!-- -------------------------------------PARTE COLORIDA---------------------------------- --> */
 
 .container {
   width: 80%;
@@ -50,6 +50,9 @@ body {
   margin-top: -25px;
 }
 
+/* <!-- -------------------------------------BOTÃO CRIAR CONTA---------------------------------- --> */
+
+
 #criar-conta {
   padding-left: 33px;
   padding-right: 33px;
@@ -75,8 +78,9 @@ body {
   box-shadow: 7px 5px 56px -10px #fff;
  }
 
-#criar-conta a {
+ .container a {
   text-decoration: none;
+  color: #fff;
   color:  rgb(53, 158, 168);
 }
 
@@ -86,6 +90,8 @@ body {
   font-size: 18px;
   margin-top: 20px;
 }
+
+/* <!-- -------------------------------------ICONS---------------------------------- --> */
 
 .icons {
   margin-top: 20px;
@@ -99,9 +105,7 @@ body {
   padding: 10px;
 }
 
-/* FIM DIV AZUL */
-
-/* DIV BRANCA */
+/* <!-- -------------------------------------PARTE BRANCA---------------------------------- --> */
 
 .qd-branco {
   width: 50%;
@@ -115,8 +119,10 @@ body {
   color:rgb(53, 158, 168);
   text-align: center;
   font-size: 50px;
-  margin-top: 20px;
+  margin-top: 100px;
 }
+
+/* <!-- -------------------------------------INPUTS---------------------------------- --> */
 
 .input-box {
   display: flex;
@@ -153,6 +159,8 @@ body {
   color: #000000be;
 }
 
+/* -------------------------------------OLHO----------------------------- */
+
 #ver {
   position: absolute;
   width: 30px;
@@ -160,6 +168,8 @@ body {
   margin-top: 30px;
   cursor: pointer;
 }
+
+/* -----------------------------ESQUECEU SENHA--------------------------------- */
 
 #frase-esqueceu {
   color:  rgb(53, 158, 168);
@@ -176,6 +186,8 @@ body {
   color: #000;
   margin-left: 260px;
 }
+
+/* <!-- -------------------------------------BOTÃO ENTRAR---------------------------------- --> */
 
 .bnt-entrar {
   position: relative;
