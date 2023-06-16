@@ -85,7 +85,7 @@ ul li.item_menu a {
     font-size: 20px;
     padding: 15px 4%;
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     line-height: 35px;
 }
 
@@ -365,7 +365,7 @@ ul li.item_menu a .icon>i {
 .cards {
     position: relative;
     display: flex;
-    margin-top: 490px;
+    margin-top: 450px;
     padding: -10px;
     z-index: 1;
 }
@@ -408,7 +408,7 @@ ul li.item_menu a .icon>i {
 }
 
 .card1, .card2, .card3 {
-    width: 330px;
+    width: 450px;
     height: 170px;
     background: #fff;
     padding: 1rem;
