@@ -110,31 +110,44 @@ ul li.item_menu a .icon>i {
 .card {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
     position: absolute;
-    left: 55%;
+    left: 12%;
     top: 20%;
-    width: 40%;
-    height: 40%;
+    width: 80%;
+    height: 60%;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    overflow: hidden;
 }
 
+/* ------------------------H1, H2 --------------------- */
 
-/* -------------------------------INPUTS------------------------ */
+.card h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+/* ----------------------inputs------------------ */
 
 .inputs {
-    margin-top: -1%;
-    text-align: center;
+    display: flex;
+    margin-left: 33%;
+    margin-top: 5%;
 }
 
 .inputs input {
     text-align: center;
-    width: 20%;
-    margin: 0.6rem 0;
+    width: 15%;
     padding: 0.8rem 1.2rem;
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #00001c;
     cursor: pointer;
+    margin-left: -35px;
 }
 
 .inputs input:hover {
@@ -153,58 +166,9 @@ ul li.item_menu a .icon>i {
     font-size: 15px;
     font-weight: 600;
     color: #000000c0;
-    display: block;
-    margin-top: 10px;
+    margin-top: -30px;
+    margin-left: 50px;
 }
-
-/* ---------------------------Nº LAVAGEM--------------------------- */
-
-.card h1 {
-    text-align: center;
-    color: #000;
-    font-size: 40px;
-    margin-top: 10px;
-}
-
-/*----------------------------PROXIMO, VOLTAR--------------------------- */
-
-.card .proximo, .voltar{
-    position: fixed;
-    width: 4%;
-    height: 8%;
-    border-radius: 100%;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    margin-left: 34%;
-    margin-top: -8%;
-}
-
-.card .voltar {
-    margin-left: 15px;
-    
-}
-
-.card .proximo:hover, .voltar:hover {
-    background-color: #03030376;
-}
-
-.card .proximo i:hover, .voltar i:hover {
-    color: #fff;
-}
-
-.card .proximo i, .voltar i {
-    color: black;
-    font-size: 45px;
-    margin-left: 8px;
-}
-
-.card .voltar i {
-    margin-left: -10px;
-
-
-}
-
 
 /* -----------------------------SELECT-------------------- */
 
@@ -222,101 +186,202 @@ ul li.item_menu a .icon>i {
     outline: none;
     box-shadow: 1px 1px 6px #00001c;
     margin-top: 10px;
+    margin-left: -55px;
     cursor: pointer;
 }
 
-/* -------------------------STATUS---------------------- */
+/* -------------------------SALVAR------------------- */
 
-.block {
-    display: block;
-    margin-left: 10%;
-    margin-top: 10%;
-}
-
-/* ---------------------------KIT--------------------------- */
-
-.kit {
-    width: 40%;
-    height: 80px;
-    background-color: #fff;
-    border-radius: 8px;
-}
-
-.kit h2 {
-    font-size: 50px;
+.salvar h3 {
     text-align: center;
-    padding: 10px;
+    font-size: 20px;
+    margin-top: 30px;
 }
 
-/* -------------------------------ATIVO---------------------------- */
+.salvar button {
+    margin-left: 40%;
+    margin-top: 10px;
+    width: 20%;
+    height: 40px;
+    border: none;
+    background-color: rgb(53, 158, 168);
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* ----------------------------------arrow---------------------------- */
+
+.voltar {
+    position: absolute;
+    margin-top: -8%;
+    margin-left: 5%;
+    width: 65px;
+    height: 65px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.voltar:hover {
+    background-color: rgba(0, 0, 0, 0.553);
+}
+    
+.voltar i {
+    position: absolute;
+    font-size: 55px;
+    cursor: pointer;
+    margin-left: -35px;
+    margin-top: -30px;
+}
+
+.voltar i:hover { 
+    color: #fff;
+}
+
+.proximo {
+    position: absolute;
+    margin-top: -8%;
+    margin-left: 90%;
+    width: 65px;
+    height: 65px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.proximo:hover {
+    background-color: rgba(0, 0, 0, 0.553);
+}
+    
+.proximo i {
+    position: absolute;
+    font-size: 55px;
+    cursor: pointer;
+    margin-left: -25px;
+    margin-top: -30px;
+}
+
+.proximo i:hover { 
+    color: #fff;
+}
+
+/* -------------------------------------BOLHAS---------------------------- */
+
+#b1 {
+    position: absolute;
+    margin-top: -35%;
+    margin-left: -15px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(53, 158, 168);
+    border-radius: 50%;
+}
+
+#b2 {
+    position: absolute;
+    margin-top: -40%;
+    margin-left: 8%;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(53, 158, 168);
+    border-radius: 50%;
+}
+
+#b3 {
+    position: absolute;
+    margin-top: -26%;
+    margin-left: -8%;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(53, 158, 168);
+    border-radius: 50%;
+}
+
+#b4 {
+    position: absolute;
+    margin-left: 90%;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(53, 158, 168);
+    border-radius: 50%;
+}
+
+#b5 {
+    position: absolute;
+    margin-left: 95%;
+    margin-top: -8%;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(53, 158, 168);
+    border-radius: 50%;
+}
+
+/* ------------------------------------INFORMAÇÕES---------------------------- */
+
+.flex {
+    display: flex;
+    margin-top: 80vh;
+    margin-left: 12%;
+    position: absolute;
+}
 
 .ativo-inativo {
-    display: flex; 
-    margin-top: 2%; 
+    display: flex;
+    margin-top: 4%;
+    margin-left: 8%;
 }
 
 .ativo-inativo i {
-    color: rgb(0, 129, 0);
-    font-size: 40px;
-    margin-top: 20px;
- 
+    font-size: 50px;
+    color: green;
 }
 
 .ativo-inativo p {
     font-size: 40px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 10px;
 }
 
-/* -------------------------------STATUS------------------------- */
-
-.lavagens, .validade  {
+.status {
     display: flex;
+    margin-left: 6%;
+    margin-top: 4%;
 }
 
-.lavagens i, .validade i {
-    color: #000;
-    font-size: 40px;
-}
-
-
-
-.lavagens p, .validade p {
+.status p {
     font-size: 30px;
-    margin-top: 12px;
-    margin-left: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 400px;
 }
 
-/* ----------------------------AVISO---------------------- */
 
-.aviso {
-    border: 5px solid black;
-    width: 35%;
-    margin-left: 10%;
-    padding: 10px;
-    text-align: justify;
+
+/* --------------------LAVAGENS---------------------- */
+
+
+.lavagens {
+    display: flex;
+    margin-left: 2%;
 }
 
-/* ---------------------------SALVAR------------------------- */
-
-.salvar {
-    margin-left: 58%;
-    margin-top: -12%
+.lavagens i {
+    font-size: 50px;
 }
 
-.salvar button {
-    width: 250px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    background-color: rgb(53, 158, 168);
-    color: #fff;
-    margin-left: 25%;
-    margin-top: 5%;
+
+/* --------------------VALIDADE---------------------- */
+
+.validade {
+    display: flex;
+    margin-left: 5%;
 }
 
-.salvar button:hover {
-    background-color: rgba(53, 158, 168, 0.397);
-    transition: 1s;
+.validade i {
+    font-size: 50px;
+
 }
+

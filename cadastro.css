@@ -187,6 +187,10 @@ body {
   margin-left: 260px;
 }
 
+.qd-branco div.esq-senha a:hover {
+  color: #000000a7;
+}
+
 /* <!-- -------------------------------------BOTÃO ENTRAR---------------------------------- --> */
 
 .bnt-entrar {

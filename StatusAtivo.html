@@ -12,13 +12,13 @@
 
 <body>
 
-<!-- ---------------CABEÇALHO--------------------- -->
-  
+    <!-- ---------------CABEÇALHO--------------------- -->
+
     <div class="azul">
         <img src="imagens/logo-nome.png" alt="">
     </div>
 
-<!-- -------------------MENU LATERAL----------------------- -->
+    <!-- -------------------MENU LATERAL----------------------- -->
 
     <nav class="menu-lateral">
 
@@ -77,14 +77,8 @@
 
     <script src="menu.js"></script>
 
-
-    <!-- ------------------------RESTO DO SITE-------------------- -->
-
-    <div class="block">
-        <div class="kit">
-            <h2>Kit Avançado</h1>
-        </div>
-
+    <!-- --------------------------------------------------INFORMAÇÕES---------------------------------- -->
+    <div class="flex">
         <div class="ativo-inativo">
             <i class="bi bi-check-circle-fill"></i>
             <p>Ativo</p>
@@ -104,23 +98,13 @@
         </div>
     </div>
 
-    <div class="aviso">
-        <p>Oferecemos a opção de agendar seus próximos serviços diretamente com nossos profissionais após o atendimento
-            em sua residência, caso você não queira fazê-lo pelo site</p>
-    </div>
 
-    <div class="salvar">
-        <h2>Clique em salvar para finalizar as alterações</h2>
-        <button><b>Salvar</b></button>
-    </div>
-
-
-  <!-- ---------------------------------CARDS-----------------------------------   -->
+    <!-- ---------------------------------CARDS------------------------------------->
 
     <div id="card-container">
-
         <div class="card" id="card1">
-            <h1>2ª Lavagem</h1>
+            <h1>Kit Avançado</h1>
+            <h2>2ª Lavagem</h2>
 
             <div class="inputs">
                 <label for="data">Data</label>
@@ -161,21 +145,29 @@
                 <i class="bi bi-chevron-right"></i>
             </button>
 
+            <div class="salvar">
+                <h3>Clique em salvar após fazer todas as alterações desejadas</h3>
+                <button><b>Salvar</b></button>
+            </div>
 
+            <div id="b1"></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+            <div id="b4"></div>
+            <div id="b5"></div>
         </div>
-
-
 
         <div class="card" id="card2" style="display: none;">
-            <h1>3ª Lavagem</h1>
+            <h1>Kit Avançado</h1>
+            <h2>3ª Lavagem</h2>
 
             <div class="inputs">
                 <label for="data">Data</label>
                 <input type="text" placeholder="00/00" class="data">
-                <br>
-                <label for="horario">Horario</label>
+
+                <label for="horario">Horário</label>
                 <select id="horario">
-                    <option value="">Horário Desejado</option>
+                    <option disabled selected>Horário Desejado</option>
                     <option value="08:00">08:00</option>
                     <option value="08:30">08:30</option>
                     <option value="09:00">09:00</option>
@@ -204,7 +196,6 @@
 
             </div>
 
-
             <button onclick="previousCard()" class="voltar">
                 <i class="bi bi-chevron-left"></i>
             </button>
@@ -213,20 +204,29 @@
                 <i class="bi bi-chevron-right"></i>
             </button>
 
+            <div class="salvar">
+                <h3>Clique em salvar após fazer todas as alterações desejadas</h3>
+                <button><b>Salvar</b></button>
+            </div>
+
+            <div id="b1"></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+            <div id="b4"></div>
+            <div id="b5"></div>
         </div>
 
-
-
         <div class="card" id="card3" style="display: none;">
-            <h1>4ª Lavagem</h1>
+            <h1>Kit Avançado</h1>
+            <h2>4ª Lavagem</h2>
 
             <div class="inputs">
                 <label for="data">Data</label>
                 <input type="text" placeholder="00/00" class="data">
-                <br>
-                <label for="horario">Horario</label>
+
+                <label for="horario">Horário</label>
                 <select id="horario">
-                    <option value="">Horário Desejado</option>
+                    <option disabled selected>Horário Desejado</option>
                     <option value="08:00">08:00</option>
                     <option value="08:30">08:30</option>
                     <option value="09:00">09:00</option>
@@ -255,7 +255,6 @@
 
             </div>
 
-
             <button onclick="previousCard()" class="voltar">
                 <i class="bi bi-chevron-left"></i>
             </button>
@@ -264,18 +263,29 @@
                 <i class="bi bi-chevron-right"></i>
             </button>
 
+            <div class="salvar">
+                <h3>Clique em salvar após fazer todas as alterações desejadas</h3>
+                <button><b>Salvar</b></button>
+            </div>
+
+            <div id="b1"></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+            <div id="b4"></div>
+            <div id="b5"></div>
         </div>
 
         <div class="card" id="card4" style="display: none;">
-            <h1>5ª Lavagem</h1>
+            <h1>Kit Avançado</h1>
+            <h2>5ª Lavagem</h2>
 
             <div class="inputs">
                 <label for="data">Data</label>
                 <input type="text" placeholder="00/00" class="data">
-                <br>
-                <label for="horario">Horario</label>
+
+                <label for="horario">Horário</label>
                 <select id="horario">
-                    <option value="">SHorário Desejado</option>
+                    <option disabled selected>Horário Desejado</option>
                     <option value="08:00">08:00</option>
                     <option value="08:30">08:30</option>
                     <option value="09:00">09:00</option>
@@ -304,7 +314,6 @@
 
             </div>
 
-
             <button onclick="previousCard()" class="voltar">
                 <i class="bi bi-chevron-left"></i>
             </button>
@@ -313,18 +322,29 @@
                 <i class="bi bi-chevron-right"></i>
             </button>
 
+            <div class="salvar">
+                <h3>Clique em salvar após fazer todas as alterações desejadas</h3>
+                <button><b>Salvar</b></button>
+            </div>
+
+            <div id="b1"></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+            <div id="b4"></div>
+            <div id="b5"></div>
         </div>
 
         <div class="card" id="card5" style="display: none;">
-            <h1>6ª Lavagem</h1>
+            <h1>Kit Avançado</h1>
+            <h2>6ª Lavagem</h2>
 
             <div class="inputs">
                 <label for="data">Data</label>
                 <input type="text" placeholder="00/00" class="data">
-                <br>
-                <label for="horario">Horario</label>
+
+                <label for="horario">Horário</label>
                 <select id="horario">
-                    <option value="">Horário Desejado</option>
+                    <option disabled selected>Horário Desejado</option>
                     <option value="08:00">08:00</option>
                     <option value="08:30">08:30</option>
                     <option value="09:00">09:00</option>
@@ -360,18 +380,30 @@
             <button onclick="nextCard()" class="proximo">
                 <i class="bi bi-chevron-right"></i>
             </button>
+
+            <div class="salvar">
+                <h3>Clique em salvar após fazer todas as alterações desejadas</h3>
+                <button><b>Salvar</b></button>
+            </div>
+
+            <div id="b1"></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+            <div id="b4"></div>
+            <div id="b5"></div>
         </div>
 
         <div class="card" id="card6" style="display: none;">
-            <h1>7ª Lavagem</h1>
+            <h1>Kit Avançado</h1>
+            <h2>7ª Lavagem</h2>
 
             <div class="inputs">
                 <label for="data">Data</label>
                 <input type="text" placeholder="00/00" class="data">
-                <br>
-                <label for="horario">Horário Desejado</label>
+
+                <label for="horario">Horário</label>
                 <select id="horario">
-                    <option value="">Seu horário</option>
+                    <option disabled selected>Horário Desejado</option>
                     <option value="08:00">08:00</option>
                     <option value="08:30">08:30</option>
                     <option value="09:00">09:00</option>
@@ -397,6 +429,7 @@
                     <option value="19:00">19:00</option>
                     <option value="19:30">19:30</option>
                 </select>
+
             </div>
 
             <button onclick="previousCard()" class="voltar">
@@ -406,18 +439,30 @@
             <button onclick="nextCard()" class="proximo">
                 <i class="bi bi-chevron-right"></i>
             </button>
+
+            <div class="salvar">
+                <h3>Clique em salvar após fazer todas as alterações desejadas</h3>
+                <button><b>Salvar</b></button>
+            </div>
+
+            <div id="b1"></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+            <div id="b4"></div>
+            <div id="b5"></div>
         </div>
 
         <div class="card" id="card7" style="display: none;">
-            <h1>8ª Lavagem</h1>
+            <h1>Kit Avançado</h1>
+            <h2>8ª Lavagem</h2>
 
             <div class="inputs">
                 <label for="data">Data</label>
                 <input type="text" placeholder="00/00" class="data">
-                <br>
-                <label for="horario">Horario</label>
+
+                <label for="horario">Horário</label>
                 <select id="horario">
-                    <option value="">Horário Desejado</option>
+                    <option disabled selected>Horário Desejado</option>
                     <option value="08:00">08:00</option>
                     <option value="08:30">08:30</option>
                     <option value="09:00">09:00</option>
@@ -443,6 +488,7 @@
                     <option value="19:00">19:00</option>
                     <option value="19:30">19:30</option>
                 </select>
+
             </div>
 
             <button onclick="previousCard()" class="voltar">
@@ -452,16 +498,28 @@
             <button onclick="nextCard()" class="proximo">
                 <i class="bi bi-chevron-right"></i>
             </button>
+
+            <div class="salvar">
+                <h3>Clique em salvar após fazer todas as alterações desejadas</h3>
+                <button><b>Salvar</b></button>
+            </div>
+
+            <div id="b1"></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+            <div id="b4"></div>
+            <div id="b5"></div>
         </div>
 
         <div class="card" id="card8" style="display: none;">
-            <h1>9ª Lavagem</h1>
+            <h1>Kit Avançado</h1>
+            <h2>9ª Lavagem</h2>
 
             <div class="inputs">
                 <label for="data">Data</label>
                 <input type="text" placeholder="00/00" class="data">
-                <br>
-                <label for="horario">Horario</label>
+
+                <label for="horario">Horário</label>
                 <select id="horario">
                     <option disabled selected>Horário Desejado</option>
                     <option value="08:00">08:00</option>
@@ -489,6 +547,7 @@
                     <option value="19:00">19:00</option>
                     <option value="19:30">19:30</option>
                 </select>
+
             </div>
 
             <button onclick="previousCard()" class="voltar">
@@ -498,16 +557,28 @@
             <button onclick="nextCard()" class="proximo">
                 <i class="bi bi-chevron-right"></i>
             </button>
+
+            <div class="salvar">
+                <h3>Clique em salvar após fazer todas as alterações desejadas</h3>
+                <button><b>Salvar</b></button>
+            </div>
+
+            <div id="b1"></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+            <div id="b4"></div>
+            <div id="b5"></div>
         </div>
 
         <div class="card" id="card9" style="display: none;">
-            <h1>10ª Lavagem</h1>
+            <h1>Kit Avançado</h1>
+            <h2>10ª Lavagem</h2>
 
             <div class="inputs">
                 <label for="data">Data</label>
                 <input type="text" placeholder="00/00" class="data">
-                <br>
-                <label for="horario">Horario</label>
+
+                <label for="horario">Horário</label>
                 <select id="horario">
                     <option disabled selected>Horário Desejado</option>
                     <option value="08:00">08:00</option>
@@ -535,6 +606,7 @@
                     <option value="19:00">19:00</option>
                     <option value="19:30">19:30</option>
                 </select>
+
             </div>
 
             <button onclick="previousCard()" class="voltar">
@@ -544,16 +616,28 @@
             <button onclick="nextCard()" class="proximo">
                 <i class="bi bi-chevron-right"></i>
             </button>
+
+            <div class="salvar">
+                <h3>Clique em salvar após fazer todas as alterações desejadas</h3>
+                <button><b>Salvar</b></button>
+            </div>
+
+            <div id="b1"></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+            <div id="b4"></div>
+            <div id="b5"></div>
         </div>
 
         <div class="card" id="card10" style="display: none;">
-            <h1>11ª Lavagem</h1>
+            <h1>Kit Avançado</h1>
+            <h2>11ª Lavagem</h2>
 
             <div class="inputs">
                 <label for="data">Data</label>
                 <input type="text" placeholder="00/00" class="data">
-                <br>
-                <label for="horario">Horario</label>
+
+                <label for="horario">Horário</label>
                 <select id="horario">
                     <option disabled selected>Horário Desejado</option>
                     <option value="08:00">08:00</option>
@@ -581,39 +665,49 @@
                     <option value="19:00">19:00</option>
                     <option value="19:30">19:30</option>
                 </select>
+
             </div>
 
             <button onclick="previousCard()" class="voltar">
                 <i class="bi bi-chevron-left"></i>
             </button>
+
+            <div class="salvar">
+                <h3>Clique em salvar após fazer todas as alterações desejadas</h3>
+                <button><b>Salvar</b></button>
+            </div>
+
+            <div id="b1"></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+            <div id="b4"></div>
+            <div id="b5"></div>
         </div>
+    </div>
 
-        <script>
+    <script>
 
-            let currentCard = 1;
+        let currentCard = 1;
 
-            function nextCard() {
-                document.getElementById(`card${currentCard}`).style.display = "none";
-                currentCard++;
-                document.getElementById(`card${currentCard}`).style.display = "block";
-            }
+        function nextCard() {
+            document.getElementById(`card${currentCard}`).style.display = "none";
+            currentCard++;
+            document.getElementById(`card${currentCard}`).style.display = "block";
+        }
 
-            function previousCard() {
-                document.getElementById(`card${currentCard}`).style.display = "none";
-                currentCard--;
-                document.getElementById(`card${currentCard}`).style.display = "block";
-            }
+        function previousCard() {
+            document.getElementById(`card${currentCard}`).style.display = "none";
+            currentCard--;
+            document.getElementById(`card${currentCard}`).style.display = "block";
+        }
 
-        </script>
+    </script>
 
-
-        <!-- ----------------input data----------------- -->
-
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-        <script>
-            $('.data').mask('00/00');
-        </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>
+        $('.data').mask('00/00');
+    </script>
 
 
 </body>

@@ -1,17 +1,375 @@
+* {
+    margin: 0;
+}
 
-/* -------------------CABEÇALHO------------- */
+body {}
+
+html {
+    width: 100vw;
+    height: 170vh;
+}
+
+
+/*-------------------- CABEÇALHO-----------------> */
 
 .cabecalho {
     position: fixed;
-    top: 0;
-    left: 0;
+    background-color: rgb(53, 158, 168);
     width: 100%;
-    height: 90px;
-    background-color: rgb(53, 158, 168);;
+    z-index: 1;
 }
 
-.cabecalho img {
-    width: 35%;
-    margin-top: -1.5%;
-    margin-left: 30%;
+
+/*-------------------- Botoes de cadastro e login-----------------> */
+
+.button,
+.button1 {
+    --bg: #000;
+    --hover-bg: #6df1fa;
+    --hover-text: #000;
+    color: #fff;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+    margin-left: 600px;
+    position: absolute;
+    margin-top: 3%;
+}
+
+.button1 {
+    margin-left: 500px;
+    position: absolute;
+    margin-top: 3%;
+}
+
+.button:hover,
+.button1:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active,
+.button1:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+
+/*-------------------- imagem inicial -----------------> */
+
+.text-imagemall {
+    background-image: url("image/Home.png");
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    font-size: 50px;
+}
+
+.text-imagemall h1 {
+    position: relative;
+    display: inline;
+    top: 100px;
+    left: 80px;
+    color: white;
+}
+
+.text-imagemall p {
+    padding-top: 250px;
+    padding-left: 80px;
+    font-size: 30px;
+    color: white;
+}
+
+#img {
+    width: 100%;
+}
+
+
+/*-------------------- Div responsavel pelos flip cards de horario e local-----------------> */
+
+.inferior {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+
+/*-------------------- cards que rotacionam inclui texto nos cards estilização e a rotação-----------------> */
+
+.flip-card,
+.flip-card2 {
+    margin: 20px 100px !;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin-left: 150px;
+}
+
+.flip-card p {
+    padding: 5%;
+    text-align: center;
+    margin-bottom: 40%;
+}
+
+.titleLOC {
+    font-size: 1.2em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    background-color: rgb(53, 158, 168);
+    color: rgb(0, 0, 0);
+}
+
+.flip-card-back {
+    background-color: rgb(53, 158, 168);
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+}
+
+.flip-card i {
+    font-size: 70px;
+    margin-top: -60px;
+}
+
+
+/*-------------------- flipcard2 é o card no meio dos que rotacionam -----------------> */
+
+.flip-card2 {
+    background-color: transparent;
+    width: 260px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin-left: 12%;
+}
+
+.title2 {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    margin-top: 25px;
+}
+
+.flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flip-card:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front2,
+.flip-card-back2 {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1rem;
+}
+
+.flip-card-front2 {
+    background-color: rgb(53, 158, 168);
+    color: rgb(0, 0, 0);
+}
+
+.flip-card-back2 {
+    background-color: rgb(53, 158, 168);
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+}
+
+.flip-card2 i {
+    font-size: 70px;
+    margin-top: 30px;
+}
+
+.flip-card2 p {
+    padding: 20%;
+    margin-top: -20%;
+}
+
+
+/*-------------------- div que possui uma breve descrição de nossa empresa inclui o texto e uma imagem ao lado-----------------> */
+
+.nossa-empresa p {
+    font-size: 200%;
+    margin-top: 30px;
+    margin-right: 60%;
+    position: relative;
+    margin-left: 5%;
+}
+
+.nossa-empresa h1 {
+    font-size: 300%;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.lavan {
+    margin-left: 50%;
+    margin-top: -30%;
+}
+
+.inf {
+    padding: -50%;
+    margin-left: 5%;
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.text-body {
+    color: rgb(134, 134, 134);
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15%;
+}
+
+
+/*Text*/
+
+.text-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/*Hover*/
+
+.card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.cards {
+    display: flex;
+    margin-top: 10%;
+    width: 100%;
+    margin-left: 2%;
+}
+
+.lavagens {
+    text-align: left;
+    font-size: 150%;
+    padding: 5%;
+}
+
+.lavagens h1 {
+    margin-top: 10%;
+}
+
+.fim {
+    background-image: url("image/Lencol\ \(2\).png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px solid #000;
+}
+
+.fim p {
+    padding: 10%;
+    font-size: 30px;
+    margin-right: 45%;
 }
