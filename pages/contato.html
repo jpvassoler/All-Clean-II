@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Clean</title>
+    <link rel="stylesheet" href="/pages/assets/contato.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- -------------------CABEÇALHO------------ -->
+
+    <div class="azul">
+        <img src="images/logo-nome.png" alt="">
+    </div>
+
+    <!-- ------------------MENU LATERAL-------------- -->
+
+    <nav class="menu-lateral">
+
+        <div class="bnt_expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+
+        <ul>
+
+            <li class="item_menu">
+                <a href="http://localhost:3000/paginainicial">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Inicial</span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="http://localhost:3000/perfil">
+                    <span class="icon"><i class="bi bi-person"></i></span>
+                    <span class="txt-link">Perfil</span>
+                </a>
+            </li>
+
+
+            <li class="item_menu">
+                <a href="http://localhost:3000/historico">
+                    <span class="icon"><i class="bi bi-clock"></i></span>
+                    <span class="txt-link">Histórico</span>
+                </a>
+            </li>
+
+            <li class="item_menu ativo">
+                <a href="http://localhost:3000/contato">
+                    <span class="icon"><i class="bi bi-chat"></i></span>
+                    <span class="txt-link">Contato</span>
+                </a>
+
+            </li>
+
+            <li class="item_menu">
+                <a href="http://localhost:3000/agendamento">
+                    <span class="icon"><i class="bi bi-calendar-week"></i></span>
+                    <span class="txt-link">Agendar</span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="http://localhost:3000/statusinativo">
+                    <span class="icon"><i class="bi bi-pin-angle"></i></span>
+                    <span class="txt-link">Status</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <script src="js/menu.js"></script>
+
+    <!-- -------------------TITULO--------------- -->
+    
+    <form action="/mensagem" method="post">
+        <div class="pai">
+            <div class="par">
+                <h1>Estamos prontos para ajudar você</h1>
+            </div>
+            <p>Preencha as informações abaixo e envie para que sua mensagem seja encaminhada</p>
+
+            <!-- ------------------------------INPUTS------------------- -->
+
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="firsTname">Nome completo</label>
+                    <input id="firstname" type="text" name="name" placeholder="Digite seu nome completo" minlength="1" maxlength="100" required>
+                    <script src="https://unpkg.com/imask"></script>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu email" autocomplete="email"
+                        minlength="10" maxlength="100" required>
+                </div>
+
+                <div class="input-msg">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="msg" cols="32" rows="16" placeholder="Digite aqui sua mensagem"
+                        required></textarea>
+                </div>
+
+                <div class="select-assunto">
+                    <label for="assunto">Assunto da mensagem</label>
+                    <select name="assunto" id="assunto" onchange="mostrarInput()">
+                        <option disabled selected>Selecione um opção</option>
+                        <option value="op1">Problemas com sua conta</option>
+                        <option value="op2">Atendimento</option>
+                        <option value="op3">Kits</option>
+                        <option value="op4">Dúvidas</option>
+                        <option value="op5">Outro</option>
+                    </select>
+
+                    <div class="input-assunto">
+                        <input id="inputass" type="text" name="outroass" placeholder="Digite o assunto"
+                            style="display: none;" required>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ------------------------------BOTÃO------------------- -->
+
+            <!-- <input type="submit" class="submit">
+               
+                <button class="salvar"><b>Salvar</b></button> -->
+                <button class="submit" onclick="exibirPopup()">Salvar</button>
+    
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h3>Sucesso</h3>
+                <p>Mensagem enviada</p>
+                <button class="env" onclick="fecharPopup()">OK</button>
+            </div>
+        </div>
+        </div>
+    </form>
+    <!-- ------------------------------APARECER INPUT------------------- -->
+
+    <script>
+        function mostrarInput() {
+            var select = document.getElementById("assunto");
+            var input = document.getElementById("inputass");
+
+            if (select.value === "op5") {
+                input.style.display = "block";
+            } else {
+                input.style.display = "none";
+            }
+        }
+    </script>
+<!-- ------------------------------exibir pop up------------------- -->
+<script>
+    function exibirPopup() {
+        var popup = document.getElementById("popup");
+        popup.style.display = "block";
+    }
+
+    function fecharPopup() {
+        var popup = document.getElementById("popup");
+        popup.style.display = "none";
+    }
+</script>      
+
+</body>
+
+</html>

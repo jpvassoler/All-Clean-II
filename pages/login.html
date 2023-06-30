@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Clean</title>
+    <link rel="stylesheet" href="pages/Assets/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- -------------------------------------PARTE COLORIDA---------------------------------- -->
+
+    <div class="container">
+        <div class="qd-azul">
+            <img src="images/logo-nome.png" id="all-clean">
+            <h2 id="frase-1">A melhor maneira de lavar suas roupas
+                e economizar.<br> Tudo ao mesmo tempo!
+            </h2>
+
+            <!-- -------------------------------------BOTÃO---------------------------------- -->
+
+            <a href="http://localhost:3000/cadastro"><button id="criar-conta"><strong>Criar conta</strong></button></a>
+            <h3 id="frase-2">Nossas redes sociais</h3>
+
+            <!-- -------------------------------------ICONS-REDES------------------------------------>
+
+            <div class="icons">
+                <span class="icon"><a href="https://pt-br.facebook.com/"><i class="bi bi-facebook"></i></a></span>
+                <span class="icon"><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></span>
+                <span class="icon"><a
+                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D"><i
+                            class="bi bi-twitter"></i></a></span>
+                <span class="icon"><a href="https://www.linkedin.com/login/pt"><i class="bi bi-linkedin"></i></a></span>
+            </div>
+        </div>
+
+        <!-- -------------------------------------PARTE BRANCA---------------------------------- -->
+
+        <div class="qd-branco">
+            <h1 id="frase-entrar">Entre na sua conta</h1>
+
+            <!-- -------------------------------------INPUTS---------------------------------- -->
+            <form action="/login" method="post">
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Digte seu E-mail" autocomplete="email"
+                        minlength="10" maxlength="100" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input id="password" type="password" name="password" placeholder="Digte sua senha" minlength="4"
+                        maxlength="15" required>
+                    <img src="images/eye.svg" id="ver">
+                </div>
+
+                <!-- -------------------------------------ESQUECEU SENHA---------------------------------- -->
+
+                <div class="esq-senha">
+                    <h2 id="frase-esqueceu">Esqueceu sua senha?</h2>
+                    <a href="http://localhost:3000/esqueceusenha">Clique aqui</a>
+                </div>
+
+                <!-- -------------------------------------BOTÃO---------------------------------- -->
+
+                <br>
+                <input type="submit" class="bnt-entrar">
+                <a href="http://localhost:3000/paginainicial"></a></input>
+            </form>
+        </div>
+    </div>
+
+    <!-- Input name -->
+
+    <script>
+        var regExpMask = IMask(
+            document.getElementById('firstname'),
+            {
+                mask: /^[a-z+A-ZÁáÉéÍíÓóÚúÝýÂâÊêÎîÔôÛûÀàÈèÌìÒòÙùÃãÑñÕõÄäËëÏïÖöÜüŸÿ ]{0,100}$/
+            });
+    </script>
+
+    <!-- Input senha -->
+
+    <script>
+        const senha = document.querySelector('#password')
+        const ver = document.querySelector('#ver')
+
+        ver.onclick = () => {
+            if (senha.type === 'password') {
+                senha.type = 'text'
+                ver.src = 'images/eye-slash.svg'
+            }
+            else {
+                senha.type = 'password'
+                ver.src = 'images/eye.svg'
+            }
+        }
+    </script>
+
+</body>
+
+</html>

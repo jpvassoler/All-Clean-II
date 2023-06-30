@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>All Clean</title>
+
+    <link rel="stylesheet" href="/pages/assets/cadastro.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- ------------------------IMAGEM------------------------ -->
+    <div class="container">
+        <div class="form-img">
+            <img src="images/img-criarconta.svg" alt="">
+        </div>
+
+        <!-- ------------------------PARTE BRANCA------------------------ -->
+
+        <div class="form">
+            <form action="/cadastro" method="post">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div id="ja">Já é membro?</div>
+                    <div class="login-button">
+                        <button type="button"><a
+                                href="http://localhost:3000/login">Entrar</a></button>
+                    </div>
+                </div>
+
+                <!-- ------------------------INPUTS------------------------ -->
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firsTname">Nome completo</label>
+                        <input id="firstname" type="text" name="name" placeholder="Digite seu nome completo"
+                            minlength="1" maxlength="100" required>
+                        <script src="https://unpkg.com/imask"></script>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu email" autocomplete="email"
+                            minlength="10" maxlength="100" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="text">Bairro</label>
+                        <select name="bairro">
+                            <option disabled selected>Selecione seu bairro</option>
+                            <option value="Adhemar Garcia">Adhemar Garcia</option>
+                            <option value="América">América</option>
+                            <option value="Anita Garibaldi">Anita Garibaldi</option>
+                            <option value="Atiradores">Atiradores</option>
+                            <option value="Aventureiro">Aventureiro</option>
+                            <option value="Boa Vista">Boa Vista</option>
+                            <option value="Bom Retiro">Bom Retiro</option>
+                            <option value="Bucarein">Bucarein</option>
+                            <option value="Centro">Centro</option>
+                            <option value="Comasa">Comasa</option>
+                            <option value="Costa e Silva">Costa e Silva</option>
+                            <option value="Espinheiros">Espinheiros</option>
+                            <option value="Fátima">Fátima</option>
+                            <option value="Floresta">Floresta</option>
+                            <option value="Glória">Glória</option>
+                            <option value="Guanabara">Guanabara</option>
+                            <option value="Iririú">Iririú</option>
+                            <option value="Itaum">Itaum</option>
+                            <option value="Jarivatuba">Jarivatuba</option>
+                            <option value="Jardim Iririú">Jardim Iririú</option>
+                            <option value="Jardim Paraíso">Jardim Paraíso</option>
+                            <option value="Jardim Sofia">Jardim Sofia</option>
+                            <option value="Nova Brasília">Nova Brasília</option>
+                            <option value="Paranaguamirim">Paranaguamirim</option>
+                            <option value="Petrópolis">Petrópolis</option>
+                            <option value="Pirabeiraba">Pirabeiraba</option>
+                            <option value="Profipo">Profipo</option>
+                            <option value="Saguaçu">Saguaçu</option>
+                            <option value="Santa Catarina">Santa Catarina</option>
+                            <option value="Santo Antônio">Santo Antônio</option>
+                            <option value="São Marcos">São Marcos</option>
+                            <option value="Ulysses Guimarães">Ulysses Guimarães</option>
+                            <option value="Vila Nova">Vila Nova</option>
+                          </select>
+                          
+                    </div>
+
+                    <div class="input-box">
+                        <label for="localidade">Rua e Número</label>
+                        <input id="localidade" type="text" name="rua" placeholder="Ex: Alexadre Dumas 3050"
+                            minlength="5" maxlength="100" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular (com DDD)</label>
+                        <input id="number" type="text" name="number" placeholder="(xx)xxxx-xxxx" minlength="13" maxlength="13" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password"
+                            placeholder="Crie sua senha" minlength="4" maxlength="15" oninput="validarSenha()"
+                            required>
+                        <img src="images/eye.svg" id="ver">
+                    </div>
+                </div>
+
+                <!-- ------------------------CHECK------------------------ -->
+
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" id="check" hidden="" required></input>
+                    <label for="check" class="checkmark"></label>
+                </label>
+
+                <div id="eu-li">Eu li e concordo com os <span id="span"><b>termos e condições</b></span></div>
+                
+
+                <!-- ------------------------CHECK------------------------ -->    
+                <div class="criar-button">
+               <input type="submit" value="Criar"></input>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- --------------------TERMOS E CONDIÇÕES------------------- -->
+
+    <div class="termos">
+        <div class="termos-condicoes">
+            <i class="bi bi-x-circle-fill" id="arrow"></i>
+            <h1>Termos e condições</h1>
+        </div>
+        <div class="text-termos">
+            <p>Coleta de Dados: Ao contratar os nossos serviços, você concorda em fornecer informações precisas e
+                atualizadas, incluindo seu nome completo, endereço residencial, telefone e endereço de e-mail. Essas
+                informações são necessárias para garantir que possamos fornecer o serviço de lavanderia diretamente em
+                sua residência.
+                <br>
+                Segurança dos Dados: Comprometemo-nos a proteger os seus dados pessoais e garantir a segurança das
+                informações fornecidas. Seus dados serão utilizados exclusivamente para a realização do serviço de
+                lavanderia, sendo proibido o seu compartilhamento com terceiros sem a sua autorização expressa.
+                <br>
+                Serviços: Nossos serviços incluem a retirada das roupas sujas em sua residência, transporte em uma van
+                equipada com máquinas de lavar e secar, lavagem, secagem e entrega das roupas limpas em sua residência.
+                Ao contratar nossos serviços, você reconhece e concorda que as roupas serão lavadas e secas em máquinas
+                localizadas na van e que não nos responsabilizamos por eventuais danos às roupas durante o transporte ou
+                o processo de lavagem.
+                <br>
+                Pagamento: O pagamento pelos nossos serviços deve ser feito antecipadamente através do site, utilizando
+                um dos métodos de pagamento disponíveis na plataforma.
+                <br>
+                Cancelamento: Caso deseje cancelar o serviço agendado, você deve notificar a nossa equipe com pelo menos
+                24 horas de antecedência. Caso contrário, o valor pago não será reembolsado.
+                <br>
+                Modificações nos Termos e Condições: Reservamo-nos o direito de modificar estes termos e condições a
+                qualquer momento. Quaisquer modificações serão publicadas em nosso site e entrarão em vigor
+                imediatamente após a publicação.
+            </p>
+        </div>
+    </div>
+
+    <!-- Input celular  -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>
+        $('#number').mask('(00) 0000-0000');
+    </script>
+
+    <!-- Input name -->
+
+    <script>
+        var regExpMask = IMask(
+            document.getElementById('firstname'),
+            {
+                mask: /^[a-z+A-ZÁáÉéÍíÓóÚúÝýÂâÊêÎîÔôÛûÀàÈèÌìÒòÙùÃãÑñÕõÄäËëÏïÖöÜüŸÿ ]{0,100}$/
+            });
+    </script>
+
+    <!-- Input senha -->
+
+    <script>
+        const senha = document.querySelector('#password')
+        const ver = document.querySelector('#ver')
+
+        ver.onclick = () => {
+            if (senha.type === 'password') {
+                senha.type = 'text'
+                ver.src = 'images/eye-slash.svg'
+            }
+            else {
+                senha.type = 'password'
+                ver.src = 'images/eye.svg'
+            }
+        }
+    </script>
+
+    <!-- -----------------TERMOS E CONDIÇÕES SCRIPT------------------ -->
+
+    <Script>
+
+        // ------------------ABRIR TERMOS-----------------
+
+        var tec = document.querySelector('#span');
+
+        tec.addEventListener('click', function () {
+            var conteudo_termos = document.querySelector('.termos');
+            conteudo_termos.classList.add('mostrar-termos')
+
+        })
+
+        // ---------------FECHAR TERMOS------------------
+
+        var botao = document.querySelector('#arrow')
+
+        botao.addEventListener('click', function () {
+            var termos = document.querySelector('.termos');
+            termos.classList.remove('mostrar-termos')
+        })
+    </Script>
+
+</body>
+
+</html>

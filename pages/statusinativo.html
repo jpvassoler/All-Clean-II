@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Clean</title>
+    <link rel="stylesheet" href="/pages/assets/statusinativo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+<!-- ---------------CABEÇALHO--------------------- -->
+  
+    <div class="azul">
+        <img src="images/logo-nome.png" alt="">
+    </div>
+
+<!-- -------------------MENU LATERAL----------------------- -->
+
+    <nav class="menu-lateral">
+
+        <div class="bnt_expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+
+        <ul>
+
+            <li class="item_menu">
+                <a href="http://localhost:3000/paginainicial">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Inicial</span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="http://localhost:3000/perfil">
+                    <span class="icon"><i class="bi bi-person"></i></span>
+                    <span class="txt-link">Perfil</span>
+                </a>
+            </li>
+
+
+            <li class="item_menu">
+                <a href="http://localhost:3000/historico">
+                    <span class="icon"><i class="bi bi-clock"></i></span>
+                    <span class="txt-link">Histórico</span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="http://localhost:3000/contato">
+                    <span class="icon"><i class="bi bi-chat"></i></span>
+                    <span class="txt-link">Contato</span>
+                </a>
+
+            </li>
+
+            <li class="item_menu">
+                <a href="http://localhost:3000/agendamento">
+                    <span class="icon"><i class="bi bi-calendar-week"></i></span>
+                    <span class="txt-link">Agendar</span>
+                </a>
+            </li>
+
+            <li class="item_menu ativo">
+                <a href="http://localhost:3000/statusinativo">
+                    <span class="icon"><i class="bi bi-pin-angle"></i></span>
+                    <span class="txt-link">Status</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <script src="js/menu.js"></script>
+
+<!-- ---------------------------RESTO DO SITE-------------------------->
+    
+    <h1>Opss...você não adicionou nenhum plano em sua conta</h1>
+
+    <div class="inativo">
+        <i class="bi bi-x-circle-fill"></i>
+        <p>Inativo</p>        
+    </div>
+
+    <img src="images/StatusInativo.svg" id="img">
+
+    <a href="http://localhost:3000/agendamento"><p><b>Clique aqui para ver os planos disponíveis e agendar seu horário</b></p></a>
