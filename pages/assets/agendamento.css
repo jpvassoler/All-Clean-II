@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-
 * {
     /* margin: 0; */
     padding: 0;
@@ -11,6 +9,7 @@ body {
     background: #96d3e6;
     font-family: 'Inter', sans-serif;
 }
+
 
 /*---------------- CABEÇALHO---------- */
 
@@ -29,6 +28,7 @@ body {
     margin-top: -15px;
     width: 500px;
 }
+
 
 /*--------------- MENU LATERAL -----------------  */
 
@@ -105,6 +105,7 @@ ul li.item_menu a .icon>i {
     margin-left: 10px;
 }
 
+
 /* --------------------- FRASE -------------------- */
 
 .title h2 {
@@ -114,6 +115,7 @@ ul li.item_menu a .icon>i {
     font-size: 45px;
     color: #fff;
 }
+
 
 /* --------------------- RADIO INPUTS -------------------- */
 
@@ -128,7 +130,7 @@ ul li.item_menu a .icon>i {
     padding: 0.25rem;
     width: 500px;
     font-size: 14px;
-    margin-top: -20%;
+    margin-top: -25%;
     margin-left: 33%;
 }
 
@@ -158,6 +160,7 @@ ul li.item_menu a .icon>i {
     font-weight: 600;
     color: #fff;
 }
+
 
 /* -----------------------TODAS AS DIVS----------------------- */
 
@@ -244,6 +247,7 @@ ul li.item_menu a .icon>i {
     margin-top: -140px;
 }
 
+
 /* --------------- DIV BASIC ------------ */
 
 .pai-basic {
@@ -256,7 +260,6 @@ ul li.item_menu a .icon>i {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
-    height: 0;
     overflow: hidden;
 }
 
@@ -272,6 +275,7 @@ ul li.item_menu a .icon>i {
     margin-top: 10px;
     font-size: 20px;
 }
+
 
 /* --------------- DIV INTERMEDIARIO ------------ */
 
@@ -302,6 +306,7 @@ ul li.item_menu a .icon>i {
     font-size: 20px;
 }
 
+
 /* --------------- DIV AVANÇADO ------------ */
 
 .pai-avan {
@@ -331,6 +336,7 @@ ul li.item_menu a .icon>i {
     font-size: 20px;
 }
 
+
 /* --------------- DIV AVULÇO ------------ */
 
 .pai-avul {
@@ -359,6 +365,7 @@ ul li.item_menu a .icon>i {
     margin-top: 10px;
     font-size: 20px;
 }
+
 
 /* --------------------------------CARDS------------------------- */
 
@@ -392,6 +399,7 @@ ul li.item_menu a .icon>i {
     gap: 4px;
 }
 
+
 /* ---------------------CARD BASICO-------------- */
 
 .card {
@@ -407,7 +415,8 @@ ul li.item_menu a .icon>i {
     margin-left: 100px;
 }
 
-.card1, .card2 {
+.card1,
+.card2 {
     width: 330px;
     height: 170px;
     background: #fff;
@@ -433,9 +442,10 @@ ul li.item_menu a .icon>i {
     margin-left: 20px;
 }
 
+
 /* --------------SCRIP------------- */
 
-.mostrar-div{
+.mostrar-div {
     width: 50% !important;
     height: 250px !important;
     transition: .7s !important;
